@@ -8,7 +8,6 @@ Este método toma un valor entero y devuelve una nueva `cadena` que consta de la
 
 ## Ejemplo📝
 
-`Cadena.posicion()`:
 
 ```js title="posicion.dummy"
 const oración = 'aqui estara el ejemplo';

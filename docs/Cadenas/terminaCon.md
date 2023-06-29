@@ -2,13 +2,11 @@
 sidebar_position: 3
 ---
 
-# terminaCon
+# TerminaCon
 
 El método determina si una `cadena` termina con los caracteres de una `cadena` específica, devolviendo verdadero o falso según corresponda.
 
 ## Ejemplo📝
-
-`Cadena.terminaCon()`:
 
 ```js title="terminaCon.dummy"
 const cadena = "Hola, mundo!";

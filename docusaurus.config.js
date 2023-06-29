@@ -60,7 +60,7 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Meta Project',
+        title: 'Dummy Code',
         logo: {
           alt: 'My Meta Project Logo',
           src: 'img/logo.svg',

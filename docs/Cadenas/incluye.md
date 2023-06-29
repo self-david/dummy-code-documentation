@@ -8,7 +8,7 @@ Imagina que tienes una caja de juguetes y quieres saber si esa caja contiene un 
 
 Este método funciona de manera similar. Puedes usarlo para verificar si una `cadena` de texto contiene otra `cadena` específica. Si la `cadena` está presente, el método retorna verdadero; de lo contrario, retorna falso.
 
-## Ejemplo
+## Ejemplo📝
 
 ```js title="incluye.dummy"
 
@@ -18,7 +18,7 @@ console.log(frase.incluye("estás")); // verdadero
 ```
 En este caso, `incluye("estás")` retorna true porque la palabra "estás" está presente en la frase.
 
-## Sintaxis
+## Sintaxis🔤
 
 ```js
 incluye (cadena de búsqueda)

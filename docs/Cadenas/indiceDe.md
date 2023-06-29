@@ -2,13 +2,13 @@
 sidebar_position: 5
 ---
 
-# indiceDe
+# IndiceDe
 
 Imagina que tienes un libro y quieres encontrar en qué página aparece una palabra específica. Para hacerlo, puedes abrir el libro desde la primera página y revisar página por página hasta encontrar la palabra que estás buscando. Una vez que encuentras la palabra, puedes decir en qué página está ubicada.
 
 El método funciona de manera similar. Puedes usarlo para encontrar la posición de la primera aparición de una `subcadena` en una `cadena` de texto. Si la subcadena está presente, el método retorna el índice de la primera ocurrencia; de lo contrario, retorna -1.
 
-## Ejemplo
+## Ejemplo📝
 
 
 ```js title="indiceDe.dummy"
@@ -27,7 +27,7 @@ const frase = "Hola, cómo estás?";
 console.log(frase.indiceDe("adiós")); // -1
 ```
 
-## Sintaxis
+## Sintaxis🔤
 
 
 ```js

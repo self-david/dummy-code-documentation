@@ -8,8 +8,6 @@ Este método se utiliza para unir dos o más `cadenas` y devolver una nueva `cad
 
 ## Ejemplo📝
 
-`Cadena.concatenar()`:
-
 ```js title="concatenar.dummy"
 
 const cadena1 = "Hola";
