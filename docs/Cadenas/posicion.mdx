@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Posicion
 
 Este método toma un valor entero y devuelve una nueva `cadena` que consta de la única unidad de código UTF-16 ubicada en el desplazamiento especificado. Este método permite números enteros positivos y negativos. Los enteros negativos cuentan hacia atrás desde el último carácter de `cadena`.
@@ -34,6 +38,36 @@ funcion({ a, b, c }) {
   }
 }
 ```
+
+```mdx-code-block
+<BrowserWindow title='Posicion'>
+<Tabs>
+<TabItem value="easy" label="Facil">
+```
+
+```dummy
+funcion principal() {
+  imprimir('Hola mundo, es facil!');
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="hard" label="Dificil">
+```
+
+```dummy
+funcion principal() {
+  imprimir("Hola mundo, es dificil!")
+}
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
 
 
 ## Sintaxis🔤
