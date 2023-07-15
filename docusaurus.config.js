@@ -8,6 +8,10 @@
  */
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const theme = require('./src/theme/theme');
+
+
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -159,6 +163,9 @@ const config = {
         },
         // Please do not remove the credits, help to publicize Docusaurus :)
         copyright: `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme,
       },
     }),
 };
