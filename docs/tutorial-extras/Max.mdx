@@ -1,0 +1,48 @@
+---
+sidebar_position: 1
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Max
+
+Representa el valor más grande que se puede representar para un número de punto flotante. En otras palabras, es el número máximo que se puede almacenar en una variable de tipo número.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title='max'>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var maximo = Numero.max;
+var demasiadoGrande = maximo + 1;
+imprimir("Un número más grande que el máximo es: " + demasiadoGrande);
+
+//"Un número más grande que el máximo es: Infinito"
+```
+En este caso, sumamos 1 al valor de max, lo cual nuevamente resulta en un número que es mayor que el valor máximo representable, por lo que obtenemos "Infinito".
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var maximo = Numero.max;
+var esMaximo = maximo === Numero.max;
+imprimir("El valor máximo es igual a sí mismo: " + esMaximo);
+
+//"El valor máximo es igual a sí mismo: cierto"
+```
+En este ejemplo, comparamos el valor de max con max usando el operador de igualdad estricta (===). Como se espera, la comparación es verdadera ya que el valor máximo es igual a sí mismo. Por lo tanto, obtenemos "cierto" como resultado.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+Los valores mayores que max se representan como infinito y perderán su valor  actual.
+
+Dado que max es una propiedad estática de Numero, siempre se usa como Numero.max, en lugar de como una propiedad de un valor numérico.

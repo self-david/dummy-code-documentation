@@ -1,0 +1,82 @@
+---
+sidebar_position: 2
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Concatenar
+
+Se utiliza para combinar o unir dos o más cadenas de texto en una sola cadena. Imagina que tienes dos o más cadenas y deseas unirlas para formar una cadena más larga.
+
+Por ejemplo, supongamos que tienes las siguientes cadenas de texto: "Hola" y "mundo". Quieres unirlas para formar la cadena "Hola mundo".
+## Ejemplo📝
+
+```dummy
+
+var texto1 = "Hola";
+var texto2 = "mundo";
+var textoConcatenado = texto1.concatenar(texto2);
+imprimir(textoConcatenado);
+
+// Hola Mundo
+
+```
+En este caso, utilizamos el método concatenar() en la variable texto1, pasando como argumento la variable texto2 para unir las dos cadenas. El resultado es la cadena "Hola mundo", que es la concatenación de "Hola" y "mundo".
+
+El método concatenar() es útil cuando necesitas combinar diferentes partes de una cadena de texto, por ejemplo, al construir mensajes o mostrar información en la interfaz de usuario.
+
+```mdx-code-block
+<BrowserWindow title='Concatenar'>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var texto1 = "¡Hola, ";
+var texto2 = "bienvenido ";
+var texto3 = "a ";
+var texto4 = "nuestra ";
+var texto5 = "plataforma!";
+var textoConcatenado = texto1.concatenar(texto2, texto3, texto4, texto5);
+imprimir(textoConcatenado);
+
+// Hola bienvenido a  nuestra plataforma 
+```
+
+En este ejemplo, tenemos cinco cadenas diferentes y queremos unirlas todas para formar una oración completa.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+
+```dummy
+var nombre = "Juan";
+var edad = 30;
+var ciudad = "Tlaquepaque";
+var profesion = "ingeniero";
+var textoConcatenado = "Mi nombre es ".concatenar(nombre, ", tengo ", edad, " años, vivo en ", ciudad, " y soy ", profesion, ".");
+imprimir(textoConcatenado);
+
+//Mi nombre es Juan, tengo 30 años, vivo en Tlaquepaque y soy ingeniero.
+```
+
+En este segundo ejemplo, tenemos diferentes variables que contienen información sobre una persona y queremos combinar toda esa información en una sola cadena para mostrarla como un mensaje.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+## Sintaxis🔤
+
+Puede ser la cantidad de cadenas deseadas.
+
+```dummy
+concatenar(cadena1)
+concatenar(cadena1, cadena2)
+concatenar(cadena1, cadena2, ... cadenaN)
+```
+

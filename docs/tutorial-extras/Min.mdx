@@ -1,0 +1,57 @@
+---
+sidebar_position: 2
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Min
+
+Representa el número más pequeño que se puede representar. Es el número positivo más cercano a cero, pero no puede representar el valor exacto de cero.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title='min'>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var valor1 = Numero.min;
+var valor2 = valor1 + 1;
+imprimir("El número más pequeño es: " + valor1);
+imprimir("El número más pequeño + 1 es: " + valor2);
+```
+Salida:
+
+```dummy
+//El número más pequeño es: 5e-324
+//El número más pequeño + 1 es: 1
+
+```
+
+En este ejemplo, sumamos 1 al valor de min y almacenamos el resultado en 'valor2'. Como la precisión de los números de punto flotante no puede representar el número 1 tan pequeño, el resultado de la suma es simplemente 1.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var valor1 = Numero.min;
+var valor2 = valor1 * 10;
+imprimir("El número más pequeño es: " + valor1);
+imprimir("El número más pequeño * 10 es: " + valor2);
+```
+Salida:
+```dummy
+//El número más pequeño es: 5e-324
+//El número más pequeño * 10 es: 0
+
+```
+En este ejemplo, multiplicamos el valor de min por 10 y almacenamos el resultado en 'valor2'. Debido a la limitada precisión de los números de punto flotante, el resultado de la multiplicación es 0.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

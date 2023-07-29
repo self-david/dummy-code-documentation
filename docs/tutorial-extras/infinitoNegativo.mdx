@@ -1,0 +1,51 @@
+---
+sidebar_position: 4
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# InfinitoNegativo
+
+Es un valor especial que representa el infinito negativo, es decir, el número más pequeño posible que se puede representar, este valor se obtiene cuando se realiza una operación que resulta en un número muy negativo o cuando se divide un número negativo por cero.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title='infinitoNegativo'>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var resultado = -1 / 0;
+imprimir("El resultado es: " + resultado);
+```
+Salida:
+
+```dummy
+//El resultado es: -Infinito
+```
+Estamos dividiendo el número -1 por 0, lo cual no tiene un valor numérico válido y resulta en infinitoNegativo, indicando que el resultado es el número más pequeño posible.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var x = -10;
+var y = infinitoNegativo;
+var resultado = x * y;
+imprimir("El resultado es: " + resultado);
+```
+Salida:
+```dummy
+//El resultado es: -Infinito
+```
+La variable y tiene el valor de infinitoNegativo, y al multiplicarla con el valor x, el resultado es nuevamente infinitoNegativo.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+Tener en cuenta que infinitoNegativo es un valor especial y no se debe utilizar en operaciones matemáticas regulares, ya que no tiene sentido en el contexto de cálculos normales. Se utiliza principalmente para representar resultados inválidos o situaciones especiales en programas.
