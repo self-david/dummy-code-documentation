@@ -13,7 +13,10 @@ const cadena = "Hola, mundo!";
 
 consola.log(cadena.terminaCon("!")); // Resultado: verdadero
 consola.log(cadena.terminaCon("mundo")); // Resultado: falso
+consola.log(cadena.terminaCon("mundo!")); // Resultado: verdadero
 ```
+
+te puedes dar cuenta de que puedes usar desde uno hasta n caracteres, pero estos deben coincidir al 100% para que regrese verdadero.
 
 ## Sintaxis🔤
 
