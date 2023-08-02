@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdummy_code_documentation=self.webpackChunkdummy_code_documentation||[]).push([[4732],{9053:e=>{e.exports=JSON.parse('{"permalink":"/dummy-code-documentation/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
