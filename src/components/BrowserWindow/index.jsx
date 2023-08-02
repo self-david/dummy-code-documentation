@@ -1,8 +1,6 @@
 // eslint-disable-next-line header/header
 import React from 'react';
 import clsx from 'clsx';
-// import { BrowserOnly } from "@docusaurus/core";
-
 import styles from './styles.module.css';
 
 export default function BrowserWindow({
