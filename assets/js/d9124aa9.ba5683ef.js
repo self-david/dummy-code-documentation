@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdummy_code_documentation=self.webpackChunkdummy_code_documentation||[]).push([[3814],{9272:o=>{o.exports=JSON.parse('{"permalink":"/dummy-code-documentation/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

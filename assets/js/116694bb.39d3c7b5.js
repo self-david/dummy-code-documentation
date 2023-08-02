@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdummy_code_documentation=self.webpackChunkdummy_code_documentation||[]).push([[110],{179:o=>{o.exports=JSON.parse('{"label":"facebook","permalink":"/dummy-code-documentation/blog/tags/facebook","allTagsPath":"/dummy-code-documentation/blog/tags","count":1}')}}]);
