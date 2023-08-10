@@ -1,6 +1,9 @@
 ---
 sidebar_position: 3
 ---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # TerminaCon
 
@@ -8,16 +11,21 @@ El método determina si una `cadena` termina con los caracteres de una `cadena` 
 
 ## Ejemplo📝
 
-```js title="terminaCon.dummy"
+```dummy
 const cadena = "Hola, mundo!";
 
-consola.log(cadena.terminaCon("!")); // Resultado: verdadero
-consola.log(cadena.terminaCon("mundo")); // Resultado: falso
+var resultado1 = cadena.terminaCon("!"); 
+var resultado2 = cadena.terminaCon("mundo");
+```
+Salida:
+```dummy
+// Resultado: verdadero
+// Resultado: falso
 ```
 
 ## Sintaxis🔤
 
-```js
+```dummy
 terminaCon(cadena de búsqueda)
 terminaCon(cadena de búsqueda, posición final)
 ```

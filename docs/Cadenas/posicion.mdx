@@ -13,62 +13,19 @@ Este método toma un valor entero y devuelve una nueva `cadena` que consta de la
 ## Ejemplo📝
 
 
-```dummy title="posicion.dummy"
-const oración = 'aqui estara el ejemplo';
-
-imprimir('Every repo must come with a mascot.');
-
-// esto es un comentario
-
-si (cierto y x) {
-  imprimir(5 + 12.5)
-} osi {
-  imprimir(y)
-} sino {
-  imprimir("es un else")
-}
-
-funcion({ a, b, c }) {
-  imprimir(5 + 12.5)
-
-  para (const fruta en ['uva', 'manzana', 'pera', 'lima', 'guayaba']) {
-    imprimir(fruta)
-    eliminar fruta
-    imprimir(Infinito)
-  }
-}
-```
-
-```mdx-code-block
-<BrowserWindow title='Posicion'>
-<Tabs>
-<TabItem value="easy" label="Facil">
-```
-
 ```dummy
-funcion principal() {
-  imprimir('Hola mundo, es facil!');
-}
-```
+var texto = "Hola, este es un ejemplo de texto.";
 
-```mdx-code-block
-</TabItem>
-<TabItem value="hard" label="Dificil">
-```
+var posic = 7;
+var resultado = texto.posicion(posic);
 
+imprimir("El carácter en la posición " + posic + " es: " + resultado);
+```
+Salida:
 ```dummy
-funcion principal() {
-  imprimir("Hola mundo, es dificil!")
-}
+//El carácter en la posición 7 es: e
 ```
-
-```mdx-code-block
-</TabItem>
-</Tabs>
-</BrowserWindow>
-```
-
-
+En este ejemplo, estamos utilizando el método posicion() para acceder al carácter en la posición especificada (en este caso, la posición 7) en la cadena de texto. 
 
 ## Sintaxis🔤
 

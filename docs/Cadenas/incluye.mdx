@@ -1,0 +1,65 @@
+---
+sidebar_position: 4
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Incluye
+
+Puedes usarlo para verificar si una `cadena` de texto contiene otra `cadena` específica. Si la `cadena` está presente, el método retorna verdadero; de lo contrario, retorna falso.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+const frase = "Hola, cómo estás?";
+console.log(frase.incluye("estás"));
+```
+Salida:
+
+```dummy
+//verdadero
+```
+En este caso, `incluye("estás")` retorna verdadero porque la palabra "estás" está presente en la frase.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var cadena = "Hola, este es un ejemplo de cadena.";
+var subcadena = "ejemplo";
+
+var resultado = cadena.incluye(subcadena, 10);
+
+si (resultado) {
+  imprimir("La subcadena se encuentra en la posición especificada.");
+} sino {
+  imprimir("La subcadena no se encuentra en la posición especificada.");
+}
+
+```
+Salida:
+```dummy
+//La subcadena se encuentra en la posición especificada
+```
+En este ejemplo, estamos utilizando el método incluye() para verificar si la subcadena "ejemplo" está presente en la cadena dada, comenzando desde la posición 10. Luego, comprobamos el resultado y mostramos un mensaje en consecuencia.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+En este caso, la subcadena "ejemplo" se encuentra en la posición especificada, pero en caso de que no fuese asi, se imprimiria el mensaje "La subcadena no se encuentra en la posición especificada." en consola.
+
+## Sintaxis🔤
+
+```dummy
+incluye (cadena de búsqueda)
+incluye (cadena de búsqueda, posición)
+```
+

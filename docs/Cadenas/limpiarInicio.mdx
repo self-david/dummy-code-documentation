@@ -1,25 +1,31 @@
 ---
 sidebar_position: 21
 ---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # LimpiarInicio
 Se utiliza para eliminar los espacios en blanco al inicio de una cadena de texto. Imagina que tienes una cadena de texto con espacios en blanco al inicio y deseas eliminarlos.
 
-Por ejemplo, supongamos que tienes la siguiente cadena de texto: " Hola, soy un texto con espacios en blanco." Quieres eliminar los espacios en blanco al inicio para que quede así: "Hola, soy un texto con espacios en blanco."
+## Ejemplo📝
 
-## Ejemplo
-
-```js title="limpiarInicio.dummy"
+```dummy
 var texto = "   Hola, soy un texto con espacios en blanco.";
 var textoLimpio = texto.limpiarInicio();
 imprimir(textoLimpio);
 ```
+Salida:
+```dummy
+//"Hola, soy un texto con espacios en blanco."
+```
+
 En este caso, utilizamos el método limpiarInicio() en la variable texto para eliminar los espacios en blanco al inicio. El resultado es la cadena de texto sin los espacios en blanco al inicio.
 
 El método limpiarInicio() es útil cuando necesitas eliminar los espacios en blanco innecesarios al inicio de una cadena, por ejemplo, al procesar datos o validar entradas.
 
-## Sintaxi
+## Sintaxi🔤
 
-```js
+```dummy
 limpiarInicio()
 ```

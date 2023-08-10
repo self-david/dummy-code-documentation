@@ -1,0 +1,30 @@
+---
+sidebar_position: 7
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# EsEntero
+Verifica si un valor es un número entero o no. Retorna verdadero si el valor es un número entero y falso si no lo es.
+
+## Ejemplo📝
+
+```dummy
+var numero1 = 42;
+var numero2 = 3.14;
+var numero3 = "Hola";
+
+imprimir("¿Es el número 42 un entero? " + esEntero(numero1));
+imprimir("¿Es el número 3.14 un entero? " + esEntero(numero2));
+imprimir("¿Es la cadena 'Hola' un entero? " + esEntero(numero3));
+```
+Salida:
+
+```dummy
+//¿Es el número 42 un entero? verdadero
+//¿Es el número 3.14 un entero? falso
+//¿Es la cadena 'Hola' un entero? falso
+```
+Es útil cuando se necesita asegurarse de que un valor sea un número entero antes de realizar ciertas operaciones matemáticas o al validar datos de entrada en una aplicación.

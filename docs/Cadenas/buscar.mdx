@@ -1,26 +1,30 @@
 ---
 sidebar_position: 13
 ---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Buscar
 
-Se utiliza para buscar un patrón en una cadena de texto y devuelve la posición de la primera coincidencia. Imagina que tienes una frase y quieres encontrar la posición de una palabra específica dentro de esa frase.
+Se utiliza para buscar un patrón en una cadena de texto y devuelve la posición de la primera coincidencia.
 
-## Ejemplo
+## Ejemplo📝
 
-```js title="buscar.dummy"
-
+```dummy
 global frase = "Hola mundo";
 var posicion = frase.buscar("mundo");
 imprimir(posicion);
-
 ```
-
+Salida:
+```dummy
+//5
+```
 En este ejemplo, hemos creado una variable llamada frase que contiene la cadena "Hola mundo", luego utilizamos el método buscar() en la cadena frase para buscar la palabra "mundo". El resultado es la posición de la primera ocurrencia de la palabra "mundo" en la cadena, que en este caso es el número 5 (ya que la posición se cuenta desde cero). La posición se imprime en la consola.
 
-## Sintaxis
+## Sintaxis🔤
 
-```js
+```dummy
 
 Buscar(Palabra)
 

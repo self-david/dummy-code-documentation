@@ -1,23 +1,31 @@
 ---
 sidebar_position: 18
 ---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # aMayusculas
 
 Se utiliza para convertir una cadena de texto a mayúsculas. Imagina que tienes una palabra o una frase en minúsculas y quieres convertirla a mayúsculas. 
 
-## Ejemplo
+## Ejemplo📝
 
-```js title="aMayusculas.dummy"
+```dummy 
 global palabra = "Hola Mundo";
 var palabraMayuscula = palabra.aMayusculas();
 imprimir(palabraMayuscula);
 ```
+Salida:
+```dummy
+//HOLA MUNDO
+```
+
 En este ejemplo, hemos creado una variable llamada palabra que contiene la cadena "Hola Mundo". Luego utilizamos el método aMayusculas() en la cadena palabra para convertirla a mayúsculas. El resultado es la cadena "HOLA MUNDO", que se imprime en la consola.
 
 El método aMayusculas() no afecta a los caracteres que ya están en mayúsculas. Solo convierte los caracteres que están en minúsculas a su equivalente en mayúsculas.
 
-## Sintaxis
-```js
+## Sintaxis🔤
+```dummy
 aMayusculas()
 ```

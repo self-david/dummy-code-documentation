@@ -1,0 +1,62 @@
+---
+sidebar_position: 7
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Coincidir
+
+Puedes usarlo para buscar todas las coincidencias de un patrón específico en una `cadena` de texto y obtener un arreglo con todas las coincidencias encontradas.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var cadena = "Hola, ¿cómo estás? ¿Todo bien?";
+
+var resultado = cadena.coincidir("estás");
+
+imprimir("Coincidencia encontrada: " + resultado);
+
+```
+Salida:
+
+```dummy
+//Coincidencia encontrada: estás
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var cadena = "Hola, ¿cómo estás? ¿Todo bien?";
+
+var resultado = cadena.coincidir("mal");
+
+imprimir("Coincidencia encontrada: " + resultado);
+```
+Salida:
+```dummy
+//Coincidencias encontradas: nulo
+```
+en caso de no encontrarse la palabra en la cadena, retornara nulo
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+Este método es útil cuando deseas buscar patrones específicos en una cadena y obtener información sobre las coincidencias encontradas.
+
+## Sintaxis🔤
+
+```dummy
+coincidir(palabra)
+```

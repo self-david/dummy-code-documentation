@@ -1,0 +1,56 @@
+---
+sidebar_position: 15
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# IniciaCon
+
+Se utiliza para verificar si una cadena de texto comienza con un valor específico. Imagina que tienes una palabra y quieres saber si empieza con una letra o un conjunto de letras en particular.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+global palabra = "Hola mundo";
+var resultado = palabra.iniciaCon("Hola");
+imprimir(resultado);
+```
+Salida:
+
+```dummy
+//verdadero
+```
+En este ejemplo, hemos creado una variable llamada palabra que contiene la cadena "Hola mundo". Luego utilizamos el método iniciaCon() en la cadena palabra para verificar si comienza con la palabra "Hola". El resultado es un valor booleano, que indica si la cadena comienza con el valor especificado.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+También puedes utilizar el método iniciaCon() con un índice opcional para especificar la posición a partir de la cual se debe realizar la comprobación:
+```dummy
+global palabra = "Hola mundo";
+var resultado = palabra.iniciaCon("mundo", 5);
+imprimir(resultado);
+```
+Salida:
+```dummy
+//falso
+```
+En este ejemplo, utilizamos iniciaCon("mundo", 5) para comprobar si la cadena palabra comienza con "mundo" a partir de la posición 5.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+## Sintaxis🔤
+```dummy
+iniciaCon(palabraBuscada)
+startsWith(palabraBuscada, posicion)
+```

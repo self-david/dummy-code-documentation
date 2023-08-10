@@ -1,0 +1,37 @@
+---
+sidebar_position: 8
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# CoincidirTodo
+
+Puedes utilizarlo para buscar todas las coincidencias de un patrón específico en una `cadena` de texto y obtener un iterador que te permita acceder a todas las coincidencias encontradas.
+
+## Ejemplo📝
+
+```dummy
+var cadena = "Hola, amigo. ¿Cómo estás? Hola, amiga. ¿Cómo estás?";
+var patron = "amigo";
+
+var iterador = cadena.coincidirTodo(patron);
+
+para (var coincidencia en iterador) {
+  imprimir("Encontrado: " + coincidencia[0]);
+}
+```
+Estamos utilizando el método .coincidirTodo() para buscar el patrón "amigo" en la cadena dada. Luego, recorremos el iterador resultante y mostramos cada coincidencia encontrada. Cada elemento coincidencia es un objeto que contiene información sobre la coincidencia, y usamos coincidencia[0] para obtener la cadena coincidente.
+
+Salida:
+```dummy
+//Encontrado: amigo
+//Encontrado: amiga
+```
+El método `coincidirTodo()` es especialmente útil cuando necesitas trabajar con múltiples coincidencias y acceder a cada una de ellas individualmente.
+
+## Sintaxis🔤
+
+```dummy
+coincidirTodo(palabra)
+```
