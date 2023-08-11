@@ -9,19 +9,35 @@ import TabItem from '@theme/TabItem';
 
 # Concatenar
 
-Se utiliza para combinar o unir dos o más cadenas de texto en una sola cadena. Imagina que tienes dos o más cadenas y deseas unirlas para formar una cadena más larga.
+Se utiliza para combinar o unir dos o más cadenas de texto en una sola cadena. Imagina que tienes dos o más cadenas de texto y deseas unirlas para formar una cadena más larga.
 
 ## Ejemplo📝
 
+<<<<<<< HEAD
 El método concatenar() es útil cuando necesitas combinar diferentes partes de una cadena de texto, por ejemplo, al construir mensajes o mostrar información en la interfaz de usuario.
+=======
+```dummy
+var saludo = "Hola";
+var destino = "mundo";
+var textoConcatenado = saludo.concatenar(destino);
+imprimir(textoConcatenado);
+
+// Hola Mundo
+```
+
+En este caso, utilizamos el método concatenar() en la variable saludo, pasando como argumento la variable destino para unir las dos cadenas. El resultado es la cadena "Hola mundo", que es la concatenación de "Hola" y "mundo".
+
+El método concatenar() es útil cuando necesitas combinar diferentes partes de una cadena de texto, por ejemplo, al construir mensajes o mostrar información al usuario.
+>>>>>>> 510035d5bc37205927e7a50f4c9b1e3819f71b3e
 
 ```mdx-code-block
 <BrowserWindow title='Concatenar'>
 <Tabs>
-<TabItem value="var1" label="Variante 1">
+<TabItem value="var1" label="Bienvenida ✕">
 ```
 
 ```dummy
+<<<<<<< HEAD
 var texto1 = "¡Hola, ";
 var texto2 = "bienvenido ";
 var texto3 = "a ";
@@ -36,12 +52,27 @@ Salida:
 // Hola bienvenido a  nuestra plataforma 
 ```
 En este ejemplo, tenemos cinco cadenas diferentes y queremos unirlas todas para formar una oración completa.
+=======
+var nombreUsuario = "Oscar";
+var nombreAplicacion = "Dummy code";
+var mensajeBienvenida = "Hola,".concatenar(nombreUsuario, "bienvenido a", nombreAplicacion);
+imprimir(mensajeBienvenida);
+
+// Hola,oscarbienvenido aDummy code
+```
+
+En este ejemplo estamos usando un texto como la concatenacion, por lo que puedes darte cuenta de que no es obligatorio usar una variable para hacer las concatenaciones.
+
+tambien te habras dado cuenta que algunas de las palabras estan pegadas, esto es porque solo se concatenara lo que agreges.
+puedes ver el segundo ejemplo para ver como deberia ser la concatenacion
+>>>>>>> 510035d5bc37205927e7a50f4c9b1e3819f71b3e
 ```mdx-code-block
 </TabItem>
-<TabItem value="var2" label="Variante 2">
+<TabItem value="var2" label="Bienvenida ✓">
 ```
 
 ```dummy
+<<<<<<< HEAD
 var nombre = "Juan";
 var edad = 30;
 var ciudad = "Tlaquepaque";
@@ -52,9 +83,17 @@ imprimir(textoConcatenado);
 Salida:
 ```dummy
 //Mi nombre es Juan, tengo 30 años, vivo en Tlaquepaque y soy ingeniero.
+=======
+var nombreUsuario = "Oscar";
+var nombreAplicacion = "Dummy code";
+var mensajeBienvenida = "Hola, ".concatenar(nombreUsuario, " bienvenido a ", nombreAplicacion);
+imprimir(mensajeBienvenida);
+
+// Hola, oscar bienvenido a Dummy code
+>>>>>>> 510035d5bc37205927e7a50f4c9b1e3819f71b3e
 ```
 
-En este segundo ejemplo, tenemos diferentes variables que contienen información sobre una persona y queremos combinar toda esa información en una sola cadena para mostrarla como un mensaje.
+En este segundo ejemplo agregamos un espacio al principio y al final de "bienvenido a" esto hace que el resultado de la concatenacionse sea como se espera.
 ```mdx-code-block
 </TabItem>
 </Tabs>
@@ -63,11 +102,11 @@ En este segundo ejemplo, tenemos diferentes variables que contienen información
 
 ## Sintaxis🔤
 
-Puede ser la cantidad de cadenas deseadas.
+Puede ser la cantidad de cadenas de texto deseadas.
 
 ```dummy
-concatenar(cadena1)
-concatenar(cadena1, cadena2)
-concatenar(cadena1, cadena2, ... cadenaN)
+concatenar(texto1)
+concatenar(texto1, texto2)
+concatenar(texto1, texto2, ... textoN)
 ```
 
