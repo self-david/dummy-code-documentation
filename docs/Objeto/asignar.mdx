@@ -1,0 +1,27 @@
+---
+sidebar_position: 1
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# asignar
+Se utiliza para copiar los valores de todas las propiedades enumerables de uno o más objetos fuente en un objeto destino. En otras palabras, se utiliza para combinar objetos copiando las propiedades de origen en el objeto de destino.
+
+## Ejemplo📝
+
+```dummy
+var objetoDestino = { a: 1, b: 2 };
+var objetoFuente = { b: 3, c: 4 };
+
+var objetoCombinado = Objecto.asignar(objetoDestino, objetoFuente);
+
+imprimir("Objeto combinado:", objetoCombinado);
+```
+Salida:
+
+```dummy
+//Objeto combinado: { a: 1, b: 3, c: 4 }
+```
+Es importante mencionar que este método modifica el objeto de destino y también devuelve ese objeto modificado.

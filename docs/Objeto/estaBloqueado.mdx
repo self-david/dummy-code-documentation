@@ -1,0 +1,41 @@
+---
+sidebar_position: 5
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# estaBloqueado
+
+Se utiliza para verificar si un objeto está "bloqueado", lo que significa que sus propiedades no se pueden modificar, agregar o eliminar. Devuelve verdadero si el objeto está bloqueado y falso si no lo está.
+
+## Ejemplo📝
+
+```dummy
+var fruta = {
+    nombre: "Manzana",
+    color: "Rojo"
+};
+
+Objecto.bloquear(fruta); // bloquea el objeto fruta para que no se puedan modificar sus propiedades
+
+var estaCongelada = Objecto.estaBloqueado(fruta); // Verifica si la fruta está bloqueada
+
+imprimir("¿La fruta está congelada? " + ciertoFalso(estaCongelada)); // Imprime si la fruta está congelada o no
+
+function imprimir(texto) {
+    imprimir(texto);
+}
+
+function ciertoFalso(valor) {
+    return valor ? "Sí" : "No";
+}
+```
+Salida:
+
+```dummy
+//¿La fruta está congelada? Sí
+```
+
+En este ejemplo, el método estaBloqueado nos ayudaría a determinar si el objeto persona está bloqueado o no. Si el objeto está bloqueado, no podríamos modificar sus propiedades existentes ni agregar nuevas propiedades.

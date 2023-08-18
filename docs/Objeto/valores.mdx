@@ -1,0 +1,28 @@
+---
+sidebar_position: 7
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# valores
+
+Se utiliza para obtener un iterable de los valores de las propiedades de un objeto. Retorna un nuevo objeto iterable que contiene los valores de todas las propiedades propias del objeto en el mismo orden en que aparecen en un bucle.
+
+## Ejemplo📝
+
+```dummy
+var persona = { nombre: "Juan", edad: 30, ocupacion: "ingeniero" };
+
+var valores = Objecto.valores(persona);
+
+imprimir("Valores de las propiedades:", valores);
+```
+
+Salida:
+
+```dummy
+//Valores de las propiedades: [ 'Juan', 30, 'ingeniero' ]
+```
+El resultado es una lista que contiene los valores "Juan", 30 y "ingeniero", en el mismo orden en que aparecen en el objeto.

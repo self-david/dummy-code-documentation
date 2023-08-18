@@ -1,0 +1,36 @@
+---
+sidebar_position: 12
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# aTexto
+Convierte un valor en su representación de cadena de texto.
+
+## Ejemplo📝
+
+```dummy
+var numero = 42;
+var texto = "Hola, mundo!";
+var booleano = verdadero;
+
+var numeroConvertido = numero.aTexto();
+var textoConvertido = texto.aTexto();
+var booleanoConvertido = booleano.aTexto();
+
+imprimir("Número como cadena: " + numeroConvertido);
+imprimir("Texto como cadena: " + textoConvertido);
+imprimir("Booleano como cadena: " + booleanoConvertido);
+```
+Se utilizado el método aTexto en diferentes tipos de valores: un número, un texto y un booleano. Esto convierte cada uno de estos valores en su representación de cadena de texto correspondiente.
+
+Salida:
+
+```dummy
+//Número como cadena: 42
+//Texto como cadena: Hola, mundo!
+//Booleano como cadena: verdadero
+```
+Recuerda que el método no cambia el tipo original del valor, solo proporciona una representación de cadena de texto del valor.

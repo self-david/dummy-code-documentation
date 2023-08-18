@@ -1,0 +1,34 @@
+---
+sidebar_position: 3
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# bloquear
+
+Sirve para bloquear un objeto en su estado actual, lo que significa que no se pueden agregar, eliminar ni modificar propiedades en el objeto. Una vez que un objeto está bloqueado sus propiedades no pueden ser cambiadas. Esto es útil cuando quieres asegurarte de que un objeto no se modifique por error.
+
+
+## Ejemplo📝
+
+```dummy
+var objeto = { a: 1, b: 2 };
+
+Objecto.bloquear(objeto);
+
+objeto.a = 5; // Esto no tiene ningún efecto en un objeto congelado
+objeto.c = 3; // Esto tampoco tiene ningún efecto
+delete objeto.b; // Esto tampoco tiene ningún efecto
+
+imprimir("Objeto después de intentar modificarlo:", objeto);
+```
+Salida:
+
+```dummy
+//Objeto después de intentar modificarlo: { a: 1, b: 2 }
+```
+Bloqueamos el objeto utilizando el método bloquear. Luego, intentamos cambiar la propiedad a, agregar la propiedad c y eliminar la propiedad b, pero ninguno de estos cambios tiene efecto en el objeto bloqueado. Las propiedades y su valor se mantienen inalterados.
+
+Es importante tener en cuenta que el método bloquear solo actúa en la superficie del objeto. Si el objeto contiene propiedades que a su vez son objetos, esos objetos internos no están bloqueados automáticamente.

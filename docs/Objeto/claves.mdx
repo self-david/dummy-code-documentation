@@ -1,0 +1,29 @@
+---
+sidebar_position: 6
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# claves
+
+Se utiliza para obtener una lista de las claves (propiedades) de un objeto. Las claves son los nombres de las propiedades dentro del objeto. Este método es útil cuando deseas obtener una lista de las propiedades de un objeto para iterar sobre ellas o realizar otras operaciones.
+## Ejemplo📝
+
+```dummy
+var coche = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    año: 2022
+};
+
+var clavesDelCoche = Objecto.claves(coche);
+
+imprimir("Claves del coche:", clavesDelCoche);
+```
+Salida:
+
+```dummy
+//Claves del coche: marca, modelo, año
+```
