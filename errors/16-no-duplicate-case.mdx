@@ -1,0 +1,54 @@
+---
+sidebar_position: 16
+---
+
+# Casos duplicadas
+Este error ocurre cuando utilizas la misma etiqueta (valor) para más de un caso dentro de una declaración `elegir`.
+Cada etiqueta en un `elegir` debería ser única para que el flujo del programa se comporte correctamente.
+
+
+## Ejemplo📝
+
+```dummy
+elegir (valor) {
+  caso 1:
+    // Código para el caso 1
+    terminar;
+  caso 2:
+    // Código para el caso 2
+    terminar;
+  caso 1: // Mismo valor que el caso 1
+    // Código duplicado
+    terminar;
+}
+```
+En este ejemplo, tienes dos casos con la misma etiqueta 1, lo que provoca el error.
+
+## Explicación
+En una declaración `elegir`, cada caso debe representar una etiqueta única que se compara con el valor de la expresión `elegir`.
+Si tienes casos duplicados, el flujo del programa podría no funcionar como se espera,
+ya que solo se ejecutará el primer caso que coincida con el valor y los demás casos duplicados se ignorarán.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a una falta de atención al escribir los casos en una declaración `elegir`.
+
+## Solución
+Para solucionar el error, debes asegurarte de que todas las etiquetas (valores) dentro de la declaración `elegir` sean únicas.
+Si necesitas realizar acciones similares para diferentes valores, puedes agrupar esos casos y utilizar la sentencia break para controlar el flujo. Aquí tienes un ejemplo corregido:
+
+```dummy
+elegir (valor) {
+  caso 1:
+    // Código para el caso 1
+    terminar;
+  caso 2:
+    // Código para el caso 2
+    terminar;
+  caso 3:
+  caso 4: // Agrupamos los casos 3 y 4
+    // Código para los casos 3 y 4
+    terminar;
+}
+```
+En este caso, hemos corregido el error duplicando la etiqueta y hemos agrupado los casos 3 y 4 para realizar acciones similares en ambos casos.
+Esto elimina el error y asegura un flujo adecuado en la declaración `elegir`.

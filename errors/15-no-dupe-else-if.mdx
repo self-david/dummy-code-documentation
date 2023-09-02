@@ -1,0 +1,44 @@
+---
+sidebar_position: 15
+---
+
+# Condiciones duplicadas
+Este error ocurre cuando tienes dos o más bloques `osi` que tienen exactamente la misma condición.
+Esto puede generar un comportamiento incoherente en tu programa, ya que solo se ejecutará el primer bloque `osi` que coincida con la condición,
+y los demás se ignorarán.
+
+## Ejemplo📝
+
+```dummy
+si (condicion1) {
+  // Código cuando la condición1 es verdadera
+} osi (condicion2) {
+  // Código cuando la condición2 es verdadera
+} osi (condicion2) {
+  // Código duplicado, mismo condicion2
+}
+```
+En este ejemplo, tienes dos bloques `osi` con la misma condición `condicion2`, lo que provoca el error.
+
+## Explicación
+En una estructura `si-osi-osi`, las condiciones deben ser únicas y no duplicadas.
+Si tienes una condición duplicada, solo se ejecutará el primer bloque `osi` que coincida,
+y los demás se ignorarán. Esto puede llevar a resultados inesperados y difíciles de depurar.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a una falta de atención al escribir las condiciones en una estructura `si-osi-osi`.
+
+## Solución
+Para solucionar el error "no-dupe-else-if", debes revisar tus condiciones y asegurarte de que sean únicas dentro de la estructura `si-osi-osi`.
+Aquí tienes un ejemplo corregido:
+```dummy
+si (condicion1) {
+  // Código cuando la condicion1 es verdadera
+} osi (condicion2) {
+  // Código cuando la condicion2 es verdadera
+} osi (condicion3) {
+  // Código para una condición diferente
+}
+```
+En este caso, hemos corregido el error duplicando la condición `condicion2` y hemos utilizado una condición diferente en el tercer bloque `osi`.
+Esto asegura que todas las condiciones sean únicas y elimina el error.

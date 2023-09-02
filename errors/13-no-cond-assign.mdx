@@ -1,0 +1,37 @@
+---
+sidebar_position: 13
+---
+
+# Asignacion en condicionales
+Este error ocurre cuando utilizas un operador de asignación `=` dentro de una expresión condicional,
+en lugar de utilizar un operador de comparación `==` para realizar una comparación.
+
+## Ejemplo📝
+
+```dummy
+si (x = 10) {
+  // Código si x es igual a 10
+}
+```
+En este ejemplo, estás asignando el valor `10` a la variable `x` dentro de la expresión condicional `si`,
+en lugar de comparar si `x` es igual a `10`. Esto provoca el error.
+
+## Explicación
+En las expresiones condicionales, como `si`, se espera que realices comparaciones para evaluar si una condición es verdadera o falsa.
+Usar un operador de asignación dentro de una expresión condicional suele ser un error de lógica,
+ya que la intención generalmente es verificar una condición en lugar de asignar un valor.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a una falta de atención al escribir una expresión condicional.
+
+## Solución
+Para solucionar el error, asegúrate de utilizar operadores de comparación en lugar de operadores de asignación dentro de expresiones condicionales.
+Aquí tienes un ejemplo corregido:
+
+```dummy
+si (x == 10) {
+  // Código si x es igual a 10
+}
+```
+En este caso, hemos utilizado el operador de comparación `==` para verificar si `x` es igual a `10`,
+lo que es una expresión condicional válida y no genera el error.

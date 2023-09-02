@@ -1,0 +1,30 @@
+---
+sidebar_position: 14
+---
+
+# Constantes reasignadas
+Este error ocurre cuando intentas cambiar el valor de una variable que has declarado como constante.
+Las variables constantes se supone que tienen un valor inmutable una vez que se les asigna, y no se les permite ser reasignadas.
+
+## Ejemplo📝
+
+```dummy
+const numero = 42;
+numero = 20; // Intentas reasignar un nuevo valor a la constante
+```
+En este ejemplo, estás tratando de cambiar el valor de la constante `numero`, lo que provoca el error.
+
+## Explicación
+Las variables constantes se utilizan para representar valores que no deben cambiar durante la ejecución del programa.
+Intentar modificar una constante va en contra de la naturaleza de una variable constante y, por lo tanto, se considera un error.
+
+## Causa
+Este error suele ocurrir cuando intentas cambiar el valor de una variable que inicialmente declaraste como constante, lo cual no está permitido.
+
+## Solución
+Para solucionar el error, debes asegurarte de no intentar reasignar valores a las variables que has declarado como constantes.
+Si necesitas que una variable pueda cambiar su valor, debes declararla utilizando `var` en lugar de const. Aquí tienes un ejemplo corregido:
+```dummy
+var numero = 42;
+numero = 20;
+```

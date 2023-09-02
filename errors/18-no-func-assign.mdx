@@ -1,0 +1,38 @@
+---
+sidebar_position: 18
+---
+
+# Funcion reasignada
+Este error ocurre cuando intentas sobrescribir o reasignar una función que ya ha sido declarada anteriormente.
+Las funciones deben ser declaradas una vez y luego utilizadas sin modificar su definición.
+
+## Ejemplo📝
+
+```dummy
+funcion miFuncion() {
+  // Código de la función original
+}
+
+miFuncion = funcion() {
+  // Código de la nueva función
+};
+```
+En este ejemplo, estás tratando de redefinir la función miFuncion después de haberla declarado, lo que provoca el error.
+
+## Explicación
+Las funciones son elementos importantes en la programación y deben ser definidas una sola vez para evitar comportamientos inesperados o errores en el código.
+
+## Causa
+Este error suele ocurrir cuando se intenta cambiar la definición de una función después de su declaración inicial,
+lo cual va en contra del paradigma de las funciones en la programación.
+
+## Solución
+Para solucionar el error, debes asegurarte de que las funciones sean declaradas una sola vez y no sean reasignadas posteriormente.
+Si necesitas cambiar el comportamiento de una función, puedes hacerlo modificando su definición en un solo lugar sin reasignarla.
+Aquí tienes un ejemplo corregido:
+
+```dummy
+funcion miFuncion() {
+  // Código de la función original
+}
+```
