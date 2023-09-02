@@ -1,0 +1,32 @@
+---
+sidebar_position: 20
+---
+
+# AutoComparación
+Este error ocurre cuando utilizas un operador de comparación (como `==`, `<`, `>`, `<=` o `>=`) para comparar una variable o valor consigo mismo.
+
+## Ejemplo📝
+
+```dummy
+var numero = 42;
+si (numero === numero) {
+  // Código que compara la variable con ella misma
+}
+```
+En este ejemplo, estás comparando la variable `numero` consigo misma, lo que provoca el error.
+
+## Explicación
+Comparar una variable o valor consigo mismo generalmente no tiene sentido en la mayoría de los casos y suele ser un error de programación.
+El resultado de la comparación siempre será verdadero, ya que un valor es igual a sí mismo.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a una falta de atención al escribir el código.
+
+## Solución
+Para solucionar el error, simplemente elimina la comparación de la variable o valor consigo mismo,
+ya que no tiene sentido y no aporta ninguna lógica útil al programa. Aquí tienes un ejemplo corregido:
+```dummy
+var numero = 42; // Eliminamos la comparación de la variable consigo misma
+```
+En este caso, hemos eliminado la comparación de `numero` consigo misma, ya que no tiene ningún propósito en el programa.
+Esto elimina el error y simplifica el código.

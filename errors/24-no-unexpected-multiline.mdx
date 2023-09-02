@@ -1,0 +1,29 @@
+---
+sidebar_position: 24
+---
+
+# Multiples lineas inesperadas
+Este error ocurre cuando divides una sentencia en varias líneas sin utilizar un operador o estructura adecuada para indicar que la sentencia continúa en la siguiente línea.
+
+## Ejemplo📝
+
+```dummy
+const saludo = 'hola'
+[1].posicion(0);
+```
+En este ejemplo, tenemos 2 senetencia de codigo, pero al no haber un punto y coma (;) el lenguaje tratara de interpretar `'hola'[1].posicion(0)`, como si fuera una sola instruccion.
+
+## Explicación
+Las sentencias generalmente deben estar contenidas en una sola línea de código, pero es posible colocar una sola sentencia en varias lineas,
+lo que impide la lectura correcta del codigo.
+
+## Causa
+ Este error suele ocurrir debido a una incorrecta interpretacion en el codigo.
+
+## Solución
+Para solucionar el error, debes asegurarte de que las sentencias estén contenidas en una sola línea o utilizar un punto y coma (;) al terminar tu sentencia:
+
+```dummy
+const saludo = 'hola';
+[1, 2, 3].posicion(1);
+```
