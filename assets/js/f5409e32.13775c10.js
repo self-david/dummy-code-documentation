@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdummy_code_documentation=self.webpackChunkdummy_code_documentation||[]).push([[3282],{6790:e=>{e.exports=JSON.parse('{"title":"Objeto","slug":"/category/objeto","permalink":"/methods/category/objeto","navigation":{"previous":{"title":"raiz","permalink":"/methods/Mate/raiz"},"next":{"title":"asignar","permalink":"/methods/Objeto/asignar"}}}')}}]);
