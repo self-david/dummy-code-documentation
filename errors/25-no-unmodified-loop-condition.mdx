@@ -1,0 +1,42 @@
+---
+sidebar_position: 25
+---
+
+# Bucle sin modificar
+Este error ocurre cuando tienes un bucle (como un bucle `mientras` o `para`) con una condición que nunca se modifica dentro del bucle.
+En otras palabras, la condición siempre tiene el mismo valor, lo que significa que el bucle se ejecutará indefinidamente o nunca se ejecutará.
+
+## Ejemplo📝
+
+```dummy
+var contador = 0;
+
+mientras (contador === 0) {
+  // Código del bucle
+}
+```
+En este ejemplo, la condición `contador == 0` nunca cambia dentro del bucle, por lo que el bucle se ejecutará indefinidamente.
+Esto provoca el error.
+
+## Explicación
+En un bucle, la condición debe cambiar en algún momento para que el bucle pueda terminar y no se convierta en un bucle infinito.
+Un bucle con una condición que no cambia nunca puede causar problemas en el flujo de ejecución de tu programa.
+
+## Causa
+Este error suele ocurrir debido a un error lógico en la condición del bucle, como una condición que no se actualiza correctamente o una falta de atención al escribir el código.
+
+## Solución
+Para solucionar el error, debes revisar la condición del bucle y asegurarte de que cambie en algún momento dentro del bucle para permitir que este termine.
+Si la condición no debería cambiar, entonces debes reconsiderar si realmente necesitas un bucle en ese contexto. Aquí tienes un ejemplo corregido:
+
+```dummy
+var contador = 0;
+
+mientras (contador < 5) {
+  // Código del bucle
+  contador++;
+}
+```
+En este caso, hemos corregido la condición del bucle para que `contador` cambie y eventualmente haga que la condición sea falsa,
+lo que permite que el bucle termine de manera adecuada.
+Esto soluciona el error y asegura un comportamiento correcto del bucle.

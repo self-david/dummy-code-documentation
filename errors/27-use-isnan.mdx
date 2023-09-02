@@ -1,0 +1,39 @@
+---
+sidebar_position: 27
+---
+
+# No Es Numero (NeN)
+Este error ocurre cuando no utilizas la función esNeN() al verificar si un valor no es un número (NeN).
+La función isNaN() se utiliza para determinar si un valor no es un número válido.
+
+
+## Ejemplo📝
+
+```dummy
+const valor = NeN;
+if (valor == NeN) {
+  console.log("Es un número no valido");
+}
+```
+En este ejemplo, se está verificando si `valor` es `NeN` (no es un número). Sin embargo, este código genera un resultado inesperado.
+
+## Explicación
+Este tipo de comparacion siempre dara `falso` ya que se esta comparando el espacio en memoria y no el valor
+
+## Causa
+El problema es que `NeN` es un objeto y se asigna a un espacio de memoria y lo que se esta comparando es este espacio en memoria no el valor.
+
+## Solución
+
+```dummy
+const valor = NeN;
+if (esNeN(valor)) {
+  console.log("Es un número no valido");
+}
+```
+En este caso, estamos utilizando esNeN() en lugar de una comparacion por valor, lo que garantiza que solo se considere un valor NaN como un no  número.
+Esto evita resultados inesperados y soluciona el error.
+
+
+
+

@@ -1,0 +1,32 @@
+---
+sidebar_position: 26
+---
+
+# template
+Este error ocurre cuando haces referencia o utilizas una variable o función antes de que sean declaradas en tu programa.
+Se requiere que primero declares una variable o función antes de utilizarla.
+
+## Ejemplo📝
+
+```dummy
+imprimir(miVariable);
+var miVariable = 42;
+```
+
+
+## Explicación
+El codigo se procesa de arriba hacia abajo, por lo que debes declarar una variable o función antes de utilizarla en tu código.
+Intentar usar una variable o función antes de declararla puede causar comportamientos inesperados o errores.
+
+## Causa
+Este error suele ocurrir debido a un error lógico en el orden en que se declaran y utilizan las variables o funciones, o una falta de atención al escribir el código.
+
+## Solución
+Para solucionar el error, asegúrate de declarar las variables o funciones antes de utilizarlas en tu código. Aquí tienes un ejemplo corregido:
+
+```dummy
+var miVariable = 42; // Declaramos la variable antes de usarla
+imprimir(miVariable);
+```
+En este caso, hemos declarado la variable `miVariable` antes de utilizarla en la instrucción imprimir, lo que evita el error.
+Asegúrate siempre de seguir un orden lógico en la declaración y uso de variables y funciones en tu código.
