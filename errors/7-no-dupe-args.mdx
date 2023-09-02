@@ -1,0 +1,34 @@
+---
+sidebar_position: 7
+---
+
+# Argumentos duplicados
+Este error ocurre cuando defines una función y en la lista de argumentos (parámetros) tienes dos o más con el mismo nombre.
+Cada argumento debe tener un nombre único dentro de la función para que el lenguaje de programación pueda distinguirlos correctamente.
+
+## Ejemplo📝
+Supongamos que tienes la siguiente función:
+```dummy
+funcion sumar(a, b, a) {
+  regresar a + b + a;
+}
+```
+En este ejemplo, tienes dos argumentos llamados `a`, lo que provoca el error.
+
+## Explicación
+Los argumentos son valores que pasas a una función para que los utilice en su lógica.
+Es importante que los nombres de los argumentos sean únicos dentro de la función para evitar confusiones y errores.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a la falta de atención al definir los argumentos de una función.
+
+## Solución
+Para solucionar el error, debes asegurarte de que los nombres de los argumentos en una función sean diferentes entre sí.
+Aquí tienes un ejemplo corregido:
+```dummy
+funcion sumar(a, b, c) {
+  regresar a + b + c;
+}
+```
+Ahora, los nombres de los argumentos son únicos, y el error desaparecerá.
+Esto permitirá que tu función funcione correctamente sin ambigüedades en los nombres de los argumentos.

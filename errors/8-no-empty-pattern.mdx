@@ -1,0 +1,35 @@
+---
+sidebar_position: 8
+---
+
+# Desestructuracion vacia
+Este error ocurre cuando tienes una estructura de patrón, como la desestructuración de objetos o arrays, pero no contiene ninguna variable a la que puedas asignar valores.
+
+## Ejemplo📝
+Supongamos que tienes el siguiente código:
+```dummy
+const objecto = {
+  nombre: 'oscar',
+  edad: 24,
+};
+const frutas = ['manzana', 'pera', 'higo', 'sandia', 'uva'];
+
+const {} = objeto;
+const [] = frutas;
+```
+En este ejemplo, intentas desestructurar un objeto, pero el patrón entre las llaves está vacío, lo que provoca el error.
+
+## Explicación
+La desestructuración se utiliza para extraer valores de objetos o arrays y asignarlos a variables.
+Si no tienes ninguna variable en el patrón, la desestructuración no tiene sentido y es un error.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a un olvido al definir el patrón de desestructuración.
+
+## Solución
+Para solucionar el error, debes asegurarte de que tu patrón de desestructuración contenga al menos una variable donde puedas asignar los valores.
+Aquí tienes un ejemplo corregido:
+```dummy
+const { nombre } = objeto; // Ahora recuperamos la variable `nombre`.
+const [manzana, pera, ...restoDeFrutas] = frutas; // restoDeFrutas sera ['higo', 'sandia', 'uva']
+```
