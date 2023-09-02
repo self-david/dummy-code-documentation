@@ -1,0 +1,36 @@
+---
+sidebar_position: 4
+---
+
+# Claves duplicadas
+Este error se presenta cuando tienes dos o más claves con el mismo nombre en un objeto. Cada clave dentro de un objeto debe ser única, ya que las claves son como etiquetas que se utilizan para acceder a los valores almacenados en el objeto.
+
+## Ejemplo📝
+Supongamos que tienes el siguiente objeto:
+```dummy
+var persona = {
+  nombre: 'Juan',
+  edad: 30,
+  nombre: 'María'
+};
+```
+En este ejemplo, tienes dos claves llamadas "nombre", lo que provoca el error.
+
+## Explicación
+Los objetos en la programación se utilizan para organizar datos en pares clave-valor. Cada clave debe ser única para que puedas acceder a los valores de manera correcta.
+Cuando tienes claves duplicadas, el lenguaje de programación no sabe a cuál de ellas hacer referencia y muestra el error.
+
+## Causa
+Este error suele ocurrir debido a un error en la definición del objeto, donde se repiten accidentalmente las claves.
+
+## Solución
+Para solucionar el error, debes asegurarte de que todas las claves dentro de un objeto sean únicas. Aquí tienes un ejemplo corregido:
+
+```dummy
+var persona = {
+  nombre: 'Juan',
+  edad: 30,
+  apellido: 'Pérez' // Hemos cambiado `nombre` a `pellido` para hacerlo único.
+};
+```
+Ahora, todas las claves son únicas en el objeto, y el error desaparecerá.

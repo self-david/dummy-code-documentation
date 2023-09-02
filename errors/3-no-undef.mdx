@@ -1,0 +1,39 @@
+---
+sidebar_position: 3
+---
+
+# Indefinido
+Este error ocurre cuando en tu código intentas usar una palabra
+o un nombre que el lenguaje de programación no reconoce porque no ha sido definido en ninguna parte de tu programa.
+
+
+## Ejemplo📝
+Supongamos que estás escribiendo código y tienes lo siguiente:
+```dummy
+imprimir(variableDesconocida);
+
+var frutas =['uva', 'pera', 'sandia'];
+imprimir(fritas);
+```
+Aquí, `variableDesconocida` no ha sido declarada previamente en tu código, y esto provoca el error.
+Y `fritas` no existe, ya que la variable declarada es `frutas`.
+
+## Explicación
+En programación, antes de utilizar una variable o un identificador, debes declararlos, es decir, asignarles un nombre y,
+en algunos casos, un valor. Esto le permite al lenguaje de programación entender qué representa ese nombre.
+Cuando intentas usar un nombre que no ha sido declarado, el lenguaje se confunde y muestra el error.
+
+## Causa
+Este error suele ocurrir debido a un simple error tipográfico (error de dedos al escribir tu variable) o porque olvidaste declarar una variable antes de usarla.
+
+## Solución
+Para solucionar el error, debes asegurarte de declarar la variable o el identificador antes de utilizarlo.
+Aquí tienes un ejemplo de cómo hacerlo:
+
+```dummy
+var variableDesconocida = "Hola, mundo";
+imprimir(variableDesconocida);
+
+var frutas =['uva', 'pera', 'sandia'];
+imprimir(frutas);
+```

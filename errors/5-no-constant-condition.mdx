@@ -1,0 +1,38 @@
+---
+sidebar_position: 4
+---
+
+# Valor constante
+Este error ocurre cuando tienes una condición en tu código que no cambia su valor, es decir, siempre es la misma sin importar las circunstancias.
+
+## Ejemplo📝
+Supongamos que tienes el siguiente código:
+```dummy
+si (verdadero) {
+  // Algo que hacer cuando la condición es siempre verdadera.
+}
+```
+En este ejemplo, la condición es `verdadera`, lo que significa que siempre entrara en el bloque, y eso causa el error.
+
+## Explicación
+En la programación, utilizamos condiciones para controlar el flujo del programa.
+Si tienes una condición que nunca cambia, tu programa se comportará de la misma manera todo el tiempo y no será útil.
+
+## Causa
+Este error suele ocurrir debido a un error lógico en el código,
+como olvidar cambiar la condición o utilizar una constante que no cambia.
+
+## Solución
+Para solucionar el error, debes asegurarte de que la condición sea dinámica y pueda cambiar según las circunstancias.
+Aquí tienes un ejemplo corregido:
+
+```dummy
+var condicion = verdadero; // puedes asignar un valor que cambie en función de tu lógica.
+
+si (condicion) {
+  // Algo que hacer cuando la condición es verdadera.
+}
+```
+
+En este caso, hemos asignado la condición a una variable llamada "condicion", que puede cambiar su valor según lo que necesites en tu programa.
+Esto evita el error y permite que tu código funcione de manera más flexible y adecuada a tus necesidades.

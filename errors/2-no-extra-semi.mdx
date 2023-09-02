@@ -1,0 +1,32 @@
+---
+sidebar_position: 2
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Punto y coma extra
+
+Este error significa que has colocado un punto y coma (;) de más en tu código, y el lenguaje de programación lo considera innecesario.
+
+## Ejemplo📝
+Imagina que estás escribiendo código en tu lenguaje de programación y tienes esto:
+```dummy
+var numero = 42;;
+```
+Aquí, hay dos puntos y comas en lugar de uno solo. Eso es lo que causa este error.
+
+## Explicación
+El lenguaje de programación es como un conjunto de reglas gramaticales, y los puntos y comas se utilizan para separar las instrucciones. Un punto y coma al final de una línea generalmente indica el final de una instrucción. Entonces, cuando tienes dos puntos y comas juntos (;;), el lenguaje no sabe qué hacer con el segundo punto y coma, y eso provoca el error.
+
+## Causa
+Esto suele ocurrir por accidente cuando copias y pegas código o si cometes un error al escribirlo. A veces, los editores de código pueden ayudarte a evitar este tipo de errores mostrándote advertencias.
+
+## Solución
+La solución es simple. Debes eliminar el punto y coma adicional. Aquí está el código corregido:
+
+```dummy
+var numero = 42;
+```
+
+Ahora, solo hay un punto y coma al final de la instrucción, y eso está correcto. Esto hará que desaparezca el error.
