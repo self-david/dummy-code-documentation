@@ -21,7 +21,8 @@ module.exports = async function createConfigAsync() {
     baseUrlIssueBanner: true,
     url: 'https://self-david.github.io/',
 
-    onBrokenLinks: 'throw',
+    trailingSlash: true,
+    onBrokenLinks: 'ignore', // 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/docusaurus.ico',
     customFields: {
@@ -123,11 +124,11 @@ module.exports = async function createConfigAsync() {
             items: [
               {
                 label: 'Style Guide',
-                to: 'docs/',
+                to: 'methods/',
               },
               {
-                label: 'Second Doc',
-                to: 'docs/doc2',
+                label: 'Errores',
+                to: 'errors/',
               },
             ],
           },

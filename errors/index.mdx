@@ -3,30 +3,106 @@ sidebar_position: 0
 ---
 
 # Posibles errores
+Estos errores son indicativos de problemas comunes en el código, como errores de estilo, lógica incorrecta o mal uso de ciertas construcciones del lenguaje de programación.
+Identificar y corregir estos errores es esencial para asegurarse de que tu código sea legible, funcional y libre de comportamientos inesperados.
+Estos errores son importantes para mantener la calidad y la consistencia en tu código, lo que facilita su mantenimiento y mejora la robustez de tus programas.
 
-Docusaurus has a community of thousands of developers.
+## Punto y coma
+Este error se produce cuando se omite el punto y coma al final de una línea de código en un lenguaje de programación. Aunque JavaScript permite omitir el punto y coma en algunos casos, es recomendable usarlo para evitar problemas potenciales.
+Por ejemplo, `imprimir("Hola")` generaría este error.
 
-On this page we've listed some Docusaurus-related communities that you can be a part of; see the other pages in this section for additional online and in-person learning materials.
+## Punto y coma extra
+Este error se produce cuando se colocan puntos y comas adicionales al final de una línea de código en un lenguaje de programación, lo cual es innecesario y se considera una mala práctica de estilo.
+Por ejemplo, `variable = 10;;` generaría este error.
 
-Before participating in Docusaurus' communities, [please read our Code of Conduct](https://engineering.fb.com/codeofconduct/). We have adopted the [Contributor Covenant](https://www.contributor-covenant.org/) and we expect that all community members adhere to the guidelines within.
+## Indefinido
+Este error ocurre cuando intentas utilizar una variable o identificador que no ha sido previamente declarado en tu código. Es importante declarar las variables antes de usarlas para evitar comportamientos inesperados.
+Por ejemplo, si usas `miVariable` sin haberla declarado previamente, generará este error.
 
-## Stack Overflow {#stack-overflow}
+## bloque vacio
+ste error se produce cuando tienes un bloque de código vacío (sin instrucciones o comentarios) dentro de una estructura como un `si` o un bucle `para`.
+Los bloques vacíos generalmente son indicativos de un problema en la lógica del programa.
 
-Stack Overflow is a popular forum to ask code-level questions or if you're stuck with a specific error. Read through the [existing questions](https://stackoverflow.com/questions/tagged/docusaurus) tagged with **docusaurus** or [ask your own](https://stackoverflow.com/questions/ask?tags=docusaurus)!
+## Valor constante
+Este error ocurre cuando tienes una condición constante en una declaración `si` o un bucle, lo que significa que la condición nunca cambia y el flujo del programa puede ser impredecible o incorrecto.
 
-## Discussion forums {#discussion-forums}
+## Claves duplicadas
+Este error se produce cuando tienes duplicados en las claves de un objeto literal. En un objeto, cada clave debe ser única, y tener duplicados genera un comportamiento impredecible.
 
-There are many online forums for discussion about best practices and application architecture as well as the future of Docusaurus. If you have an answerable code-level question, Stack Overflow is usually a better fit.
+## Argumentos duplicados
+Este error ocurre cuando tienes parámetros duplicados en la declaración de una función. Los nombres de los parámetros deben ser únicos dentro de una función.
 
-- [Docusaurus online chat](https://discord.gg/docusaurus)
-  - [#help-and-questions](https://discord.gg/fwbcrQ3dHR) for user help
-  - [#contributors](https://discord.gg/6g6ASPA) for contributing help
-- [Reddit's Docusaurus community](https://www.reddit.com/r/docusaurus/)
+## Desestructuracion vacia
+Este error se produce cuando utilizas una destructuración de patrones en la que uno o más patrones están vacíos, lo que no tiene sentido e indica un problema en tu código.
 
-## Feature requests {#feature-requests}
+## Parentesis innecesarios
+Este error se genera cuando tienes paréntesis adicionales que no son necesarios en una expresión. Los paréntesis deben utilizarse solo cuando sea necesario para aclarar la precedencia de operadores.
 
-For new feature requests, you can create a post on our [feature requests board (Canny)](/feature-requests), which is a handy tool for road-mapping and allows for sorting by upvotes, which gives the core team a better indicator of what features are in high demand, as compared to GitHub issues which are harder to triage. Refrain from making a Pull Request for new features (especially large ones) as someone might already be working on it or will be part of our roadmap. Talk to us first!
+## Variables en una linea
+ Este error se produce cuando declaras múltiples variables en una sola línea en lugar de declararlas por separado. Esto puede dificultar la lectura y el mantenimiento del código.
 
-## News {#news}
+## bucle invertido
+Este error se genera cuando tienes un bucle `para` cuya condición de dirección no cambia correctamente, lo que puede resultar en un bucle infinito o en un bucle que nunca se ejecuta.
 
-For the latest news about Docusaurus, [follow **@docusaurus** on Twitter](https://twitter.com/docusaurus) and the [official Docusaurus blog](/blog) on this website.
+## Cero negativo
+Este error se produce cuando intentas comparar un valor con `-0` utilizando operadores de igualdad `==`. El `-0` y el `0` son equivalentes en términos de igualdad, por lo que esta comparación puede ser confusa.
+
+## Asignacion en condicionales
+Este error se genera cuando intentas asignar un valor en una expresión condicional (como `si` o `mientras`) en lugar de hacer una comparación. Esto puede llevar a errores de lógica y comportamiento inesperado.
+
+## Constantes reasignadas
+Este error ocurre cuando intentas reasignar un valor a una constante, lo cual no está permitido ya que las constantes no pueden cambiar su valor después de ser declaradas.
+
+## Condiciones duplicadas
+Este error se produce cuando tienes declaraciones else if duplicadas en una estructura condicional `osi-osi`. Cada `osi` debe tener una condición única.
+
+## Casos duplicadas
+Este error se genera cuando tienes declaraciones `caso` duplicadas en una estructura `elegir`. Cada case debe ser único.
+
+## template
+Este error se produce cuando no utilizas `terminar` en una declaración `elegir` y permites que el flujo de ejecución caiga a través de múltiples `caso`. Esto puede llevar a un comportamiento inesperado y errores.
+
+## Funcion reasignada
+Este error ocurre cuando intentas reasignar una función después de que haya sido declarada. Esto puede causar problemas en el flujo de ejecución y debería evitarse.
+
+## Autoasignación
+Este error se produce cuando intentas asignar una variable a sí misma, lo cual no tiene sentido y puede ser un error lógico en tu código.
+
+## AutoComparación
+Este error ocurre cuando intentas comparar una variable o valor consigo mismo, lo cual generalmente es innecesario y puede ser confuso en tu código.
+
+## Listas con huecos
+Este error se produce cuando defines una lista con elementos faltantes o "huecos" en su estructura. Dejar elementos faltantes puede causar comportamientos inesperados en tu código.
+
+## Codigó inalcanzable
+Este error ocurre cuando tienes código que nunca se ejecutará debido a una sentencia de `regresar`. Esto puede indicar un error lógico en tu código.
+
+## Un ciclo
+Este error se genera cuando tienes un bucle que solo se ejecuta una vez debido a `regresar` o `terminar` en la raiz del bucle. Esto puede llevar a comportamientos inesperados.
+
+## Multiples lineas
+Este error se produce cuando tienes una sentencia que se extiende por múltiples líneas sin un operador o estructura que indique la continuación de la sentencia.
+Utilizar un estilo de escritura en el que una sentencia ocupe múltiples líneas sin indicación de continuación puede llevar a resultados inesperados y dificultar la lectura del código.
+
+## Bucle sin modificar
+Este error se produce cuando tienes una condición en un bucle que nunca cambia durante la ejecución del bucle. Esto puede causar bucles infinitos o ineficiencia en el código.
+
+## Usar antes de declarar
+Este error ocurre cuando intentas utilizar una variable o función antes de que sean declaradas en tu código.
+Es importante declarar las variables y funciones antes de utilizarlas para evitar comportamientos inesperados en tu programa.
+
+## No Es Numero (NeN)
+Este error se produce cuando no utilizas la función `esNeN()` y en su lugar comparas el valor con `NeN`. La función isNaN() se utiliza para determinar si un valor es un numero no válido,
+
+## CamelCase
+Este error se genera cuando los identificadores (nombres de variables, funciones, etc.) no siguen la convención de nomenclatura 'camelCase'. En 'camelCase', las palabras están unidas
+y cada palabra después de la primera comienza con una letra mayúscula. Mantener una nomenclatura consistente y seguir las convenciones de estilo ayuda a que el código sea más legible y coherente.
+
+## Bloques inconsistentes
+Este error se produce cuando una función no siempre devuelve un valor de manera consistente. En JavaScript, es importante que una función devuelva un valor en todas sus rutas de ejecución
+posibles para garantizar un comportamiento predecible cuando se llama a la función. Evitar devoluciones inconsistentes es fundamental para evitar resultados inesperados y errores lógicos en el código.
+
+## Sin llaves
+Este error se produce cuando una declaración condicional (como un `funcion`, `si`, `sino`, `para`, `mientras`, etc.) no utiliza llaves {} para delimitar su bloque de código. Aunque los lenguajes de programacion
+permiten omitir llaves en bloques de una sola línea, utilizarlas ayuda a clarificar el alcance de las instrucciones condicionadas y previene errores potenciales al agregar más código.
+
