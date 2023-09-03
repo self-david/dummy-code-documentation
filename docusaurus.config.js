@@ -1,19 +1,9 @@
-/**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 const theme = require('./src/theme/theme');
 
 /** @returns {Promise<import('@docusaurus/types').Config>} */
 module.exports = async function createConfigAsync() {
   return {
-    title: 'Docusaurus',
+    title: 'Dummy code',
     tagline: 'Ahora puedes programar en español',
     organizationName: 'self-david',
     projectName: 'dummy-code-documentation',
@@ -28,7 +18,7 @@ module.exports = async function createConfigAsync() {
     customFields: {
       crashTest: false,
       isDeployPreview: false,
-      description: 'An optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more.',
+      description: 'dummy code description',
     },
     plugins: [
       [
@@ -120,10 +110,10 @@ module.exports = async function createConfigAsync() {
         style: 'dark',
         links: [
           {
-            title: 'Learn',
+            title: 'Informacion',
             items: [
               {
-                label: 'Style Guide',
+                label: 'Metodos',
                 to: 'methods/',
               },
               {
@@ -133,54 +123,16 @@ module.exports = async function createConfigAsync() {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'Legal',
             // Please do not remove the privacy and terms, it's a legal requirement.
             items: [
               {
-                label: 'Privacy',
+                label: 'Privacidad',
                 href: 'https://opensource.fb.com/legal/privacy/',
               },
               {
-                label: 'Terms',
+                label: 'Terminos y condiciones',
                 href: 'https://opensource.fb.com/legal/terms/',
-              },
-              {
-                label: 'Data Policy',
-                href: 'https://opensource.fb.com/legal/data-policy/',
-              },
-              {
-                label: 'Cookie Policy',
-                href: 'https://opensource.fb.com/legal/cookie-policy/',
               },
             ],
           },
@@ -192,7 +144,6 @@ module.exports = async function createConfigAsync() {
           src: '/img/meta_opensource_logo_negative.svg',
           href: 'https://dummycode.qahub.dev',
         },
-        // Please do not remove the credits, help to publicize Docusaurus :)
         copyright: 'Copyright © 2023 Dummy code.',
       },
       prism: {
