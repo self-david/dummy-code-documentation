@@ -1,0 +1,27 @@
+---
+sidebar_position: 32
+---
+
+# No es funcion
+Este error podría indicar que estás tratando de utilizar como una función una variable que no es una función válida o que se ha llamado a algo que no es una función como si fuera una función.
+
+## Ejemplo📝
+
+```dummy
+const miFuncion = 42; // Esto no es una función válida
+miFuncion(); // Intento de llamar a una variable como si fuera una función
+```
+En este ejemplo, hemos declarado la variable miFuncion, pero la hemos inicializado con un número en lugar de una función. Luego, intentamos llamar a miFuncion como si fuera una función,
+lo que generaría el error.
+
+## Explicación
+Las funciones pueden ser invocados con paréntesis `()`. Si intentas invocar algo que no es una función, como una variable que contiene un número,
+se generará un error porque no se puede llamar como si fuera una función.
+
+## Causa
+Este error suele ocurrir debido a una confusión entre variables y funciones, o cuando se intenta utilizar una variable como una función sin que sea realmente una función.
+
+## Solución
+Para solucionar el error, asegúrate de que estás utilizando funciones válidas y que las estás llamando de manera adecuada.
+Asegúrate también de que las variables que pretendes utilizar como funciones realmente sean funciones. Si estás recibiendo este mensaje de error en un contexto específico,
+revisa tu código en esa área para identificar y corregir la causa del problema.
