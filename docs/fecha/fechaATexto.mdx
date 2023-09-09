@@ -1,0 +1,26 @@
+---
+sidebar_position: 20
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# fechaATexto
+Se utiliza para obtener una representación de cadena de la parte de la fecha de un objeto Fecha. Esta representación de cadena incluye el día de la semana, el mes, el día del mes y el año en formato legible.
+
+## Ejemplo📝
+
+```dummy
+var fecha = nuevo Fecha("2023-09-08T15:30:00");
+
+var fechaFormateada = fecha.fechaATexto();
+
+imprimir("Fecha formateada:", fechaFormateada);
+```
+Salida:
+
+```dummy
+//Fecha formateada: Fri Sep 08 2023
+```
+Este método no incluye información sobre la hora, los minutos, los segundos ni la zona horaria, por lo que se centra únicamente en la fecha.

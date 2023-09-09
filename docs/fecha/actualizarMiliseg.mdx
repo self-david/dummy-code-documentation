@@ -1,0 +1,27 @@
+---
+sidebar_position: 15
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# actualizarMiliseg
+Puedes usar este método para cambiar los milisegundos de una fecha existente o para crear una nueva fecha con los milisegundos deseados.
+
+## Ejemplo📝
+
+```dummy
+var fecha = nuevo Fecha("2023-07-15T12:30:15.500");
+
+// Establecer los milisegundos en 750
+fecha.actualizarMiliseg(750);
+
+imprimir("Fecha después de establecer los milisegundos:", fecha);
+```
+Salida:
+
+```dummy
+//Fecha después de establecer los milisegundos: Fri Jul 15 2023 12:30:15 GMT-0700 (Pacific Daylight Time)
+```
+Es útil cuando necesitas ajustar los milisegundos en un objeto Date, como cuando trabajas con detalles muy precisos en el tiempo.

@@ -1,0 +1,26 @@
+---
+sidebar_position: 11
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# textoAFecha
+Toma una cadena de fecha en un formato específico y la convierte en un objeto Fecha que representa esa fecha y hora.
+
+## Ejemplo📝
+
+```dummy
+var fechaTexto = "2023-07-15T14:30:00.000Z";
+var fechaConvertida = Fecha.textoAFecha(fechaTexto);
+
+imprimir("Fecha convertida en texto:", nuevo Fecha(fechaConvertida));
+```
+Salida:
+
+```dummy
+//Fecha convertida en texto: Fri Jul 14 2023 23:30:00 GMT-0700 (Pacific Daylight Time)
+```
+
+El método textoAFecha es útil cuando necesitas convertir una cadena de fecha en un objeto Fecha para realizar operaciones de fecha y hora.

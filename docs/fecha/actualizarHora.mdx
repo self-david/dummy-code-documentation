@@ -1,0 +1,29 @@
+---
+sidebar_position: 14
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# actualizarHora
+Con este se pueden establecer las horas en un objeto Fecha. Puedes usar este método para cambiar las horas de una fecha existente o para crear una nueva fecha con las horas deseadas.
+
+## Ejemplo📝
+
+```dummy
+var fecha = nuevo Fecha("2023-07-15T12:30:00");
+
+// Establecer las horas en 16, minutos en 45, segundos en 0
+fecha.actualizarHora(16, 45, 0);
+
+imprimir("Fecha después de establecer las horas:", fecha);
+
+```
+Salida:
+
+```dummy
+//Fecha después de establecer las horas: Fri Jul 15 2023 16:45:00 GMT-0700 (Pacific Daylight Time)
+```
+
+Debemos tener en cuenta que este metodo toma 4 argumentos. El primer argumento representa las horas (de 0 a 23). El segundo argumento representa los minutos (de 0 a 59). El tercer argumento representa los segundos (de 0 a 59). El cuarto argumento representa los milisegundos (de 0 a 999). Los minutos, segundos y milisegundos son opcionales.

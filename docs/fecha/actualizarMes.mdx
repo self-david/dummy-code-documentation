@@ -1,0 +1,28 @@
+---
+sidebar_position: 17
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# actualizarMes
+Puedes usar este método para cambiar el mes de una fecha existente o para crear una nueva fecha con el mes deseado.
+
+## Ejemplo📝
+
+Este metodo toma dos argumentos: el mes que deseas establecer y, opcionalmente, el día del mes. El mes se especifica como un número entero en el rango de 0 (enero) a 11 (diciembre).
+```dummy
+var fecha = nuevo Fecha("2023-07-15");
+
+// Establecer el mes en febrero (mes 1)
+fecha.actualizarMes(1);
+
+imprimir("Fecha después de establecer el mes:", fecha);
+```
+Salida:
+
+```dummy
+//Fecha después de establecer el mes: Wed Feb 15 2023 00:00:00 GMT-0800 (Pacific Standard Time)
+```
+Es importante tener en cuenta que el mes se indexa desde 0, por lo que 0 representa enero, 1 representa febrero, y así sucesivamente.

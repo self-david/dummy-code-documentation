@@ -1,0 +1,27 @@
+---
+sidebar_position: 16
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# actualizarMinutos
+Puedes usar este método para cambiar los minutos de una fecha existente o para crear una nueva fecha con los minutos deseados.
+
+## Ejemplo📝
+
+```dummy
+var fecha = nuevo Fecha("2023-07-15T12:30:00");
+
+// Establecer los minutos en 45
+fecha.actualizarMinutos(45);
+
+imprimir("Fecha después de establecer los minutos:", fecha);
+```
+Salida:
+
+```dummy
+//Fecha después de establecer los minutos: Sat Jul 15 2023 12:45:00 GMT-0700 (Pacific Daylight Time)
+```
+Este método toma dos argumentos: los minutos que deseas establecer y, opcionalmente, los segundos y los milisegundos. Los minutos se especifican como un número entero en el rango de 0 a 59.
