@@ -11,6 +11,11 @@ Redondea un número decimal al entero más cercano.
 
 ## Ejemplo📝
 
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
 ```dummy
 var numeroDecimal = 4.7;
 var numeroRedondeado = Mate.redondeoCercano(numeroDecimal);
@@ -24,4 +29,28 @@ Salida:
 ```dummy
 //Número original: 4.7
 //Número redondeado: 5
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var numero = 9.99;
+
+var numeroRedondeadoHaciaAbajo = Mate.redondeoCercano(numero);
+
+imprimir("Número original:", numero);
+imprimir("Número redondeado hacia abajo:", numeroRedondeadoHaciaAbajo);
+```
+Salida:
+```dummy
+//Número original: 9.99
+//Número redondeado hacia abajo: 9
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
 ```
