@@ -1,0 +1,67 @@
+---
+sidebar_position: 2
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Concatenar
+
+Se utiliza para combinar o unir dos o más cadenas de texto en una sola cadena. Imagina que tienes dos o más cadenas de texto y deseas unirlas para formar una cadena más larga.
+
+## Ejemplo📝
+
+El método concatenar() es útil cuando necesitas combinar diferentes partes de una cadena de texto, por ejemplo, al construir mensajes o mostrar información en la interfaz de usuario.
+
+```mdx-code-block
+<BrowserWindow title='Concatenar'>
+<Tabs>
+<TabItem value="var1" label="Bienvenida ✕">
+```
+
+```dummy
+var nombreUsuario = "Oscar";
+var nombreAplicacion = "Dummy code";
+var mensajeBienvenida = "Hola,".concatenar(nombreUsuario, "bienvenido a", nombreAplicacion);
+imprimir(mensajeBienvenida);
+
+// Hola,oscarbienvenido aDummy code
+```
+
+En este ejemplo estamos usando un texto como la concatenacion, por lo que puedes darte cuenta de que no es obligatorio usar una variable para hacer las concatenaciones.
+
+tambien te habras dado cuenta que algunas de las palabras estan pegadas, esto es porque solo se concatenara lo que agreges.
+puedes ver el segundo ejemplo para ver como deberia ser la concatenacion
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Bienvenida ✓">
+```
+
+```dummy
+var nombreUsuario = "Oscar";
+var nombreAplicacion = "Dummy code";
+var mensajeBienvenida = "Hola, ".concatenar(nombreUsuario, " bienvenido a ", nombreAplicacion);
+imprimir(mensajeBienvenida);
+
+// Hola, oscar bienvenido a Dummy code
+```
+
+En este segundo ejemplo agregamos un espacio al principio y al final de "bienvenido a" esto hace que el resultado de la concatenacionse sea como se espera.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+## Sintaxis🔤
+
+Puede ser la cantidad de cadenas de texto deseadas.
+
+```dummy
+concatenar(texto1)
+concatenar(texto1, texto2)
+concatenar(texto1, texto2, ... textoN)
+```
+
