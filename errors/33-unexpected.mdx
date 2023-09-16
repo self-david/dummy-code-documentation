@@ -1,0 +1,43 @@
+---
+sidebar_position: 33
+---
+
+# Error inesperado
+Este error indica que se ha encontrado algo en el código que no era lo que se esperaba en ese contexto específico.
+Puede estar relacionado con una gran variedad de problemas, como un operador inesperado, una estructura sintáctica incorrecta o una función que se llamó en un lugar inapropiado.
+
+## Ejemplo📝
+
+```dummy
+const x = 4;
+
+si (x > 10) {
+  imprimir("x es mayor que 10");
+} sinon {
+  imprimir("x no es mayor que 10");
+}
+```
+En este ejemplo, podría indicar que se encontró un error inesperado en la línea del bloque `sino` donde se ve que se escribio una `n` al final del `sino`.
+
+## Explicación
+Este tipo de errores pueden ser causados por una variedad de factores, como errores tipográficos,
+errores de sintaxis, problemas en la lógica del código o incluso por la interacción de diferentes partes del programa.
+
+## Causa
+Este error suele ocurrir debido a la falta de atención al escribir el código o cuando se eliminan partes del código que utilizaban previamente la variable,
+pero la declaración de la variable se ha dejado intacta.
+
+## Solución
+Para solucionar este tipo de error, debes examinar cuidadosamente la línea de código en la que se generó el error y verificar si hay errores tipográficos, sintaxis incorrecta o problemas lógicos.
+A menudo, estos errores se pueden corregir ajustando el código para que siga las reglas del lenguaje de programación.
+Si el error es particularmente difícil de identificar, es útil dividir el código en partes más pequeñas y probar cada parte por separado para aislar la fuente del problema.
+
+```dummy
+funcion ejemplo() {
+  const variable1 = 'estoy siendo usada';
+  // const variable2 = 'no soy usada en ningun lugar';
+
+  imprimir(variable1);
+}
+```
+En este caso fue un error tipografico y tan solo se tuvo que eliminar la `n` que esta despues de `sino`.

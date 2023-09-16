@@ -1,0 +1,33 @@
+---
+sidebar_position: 12
+---
+
+# Cero negativo
+Este error ocurre cuando utilizas el operador de comparación `==` para verificar si un valor es igual a -0.
+
+## Ejemplo📝
+
+```dummy
+si (valor == -0) {
+  // Código cuando el valor es -0
+}
+```
+En este ejemplo, estás comparando el valor con `-0`, lo que provoca el error.
+
+## Explicación
+Los valores `-0` y `0` son considerados iguales en términos de valor.
+Sin embargo, comparar un valor con -0 puede ser confuso y propenso a errores, por lo que se considera una mala práctica.
+
+## Causa
+Este error suele ocurrir debido a una comparación innecesaria o a un error en la lógica del programa.
+
+## Solución
+Para solucionar el error, evita comparar un valor con -0. En su lugar, puedes comparar el valor con `0` si es necesario.
+Aquí tienes un ejemplo corregido:
+```dummy
+si (valor === 0) {
+  // Código cuando el valor es 0
+}
+```
+En este caso, hemos comparado el valor con `0`, que es más claro y menos propenso a errores que compararlo con `-0`.
+Esto eliminará el error y hará que tu código sea más legible.

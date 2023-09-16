@@ -1,0 +1,37 @@
+---
+sidebar_position: 11
+---
+
+# bucle invertido
+Este error ocurre cuando tienes un bucle `para` que no está incrementando o decrementando correctamente el iterador en cada iteración,
+lo que puede causar un bucle infinito o un comportamiento inesperado en tu programa.
+
+## Ejemplo📝
+
+```dummy
+para (var i = 0; i > 5; i--) {
+  // Código dentro del bucle
+}
+```
+En este ejemplo, la condición `i > 5` nunca se cumple ya que `i` no es mayor a `5`, lo que provoca el error.
+
+## Explicación
+En un bucle `para`, el iterador generalmente debe incrementarse o decrementarse en cada iteración para que el bucle avance o
+retroceda en la dirección correcta.
+Un error en la dirección del bucle puede llevar a resultados inesperados o a bucles infinitos que pueden bloquear tu programa.
+
+## Causa
+Este error suele ocurrir debido a una condición incorrecta en el bucle o a una expresión de incremento o decremento que no está configurada adecuadamente.
+
+## Solución
+Para solucionar el error, debes revisar la condición del bucle y la expresión de incremento o decremento para asegurarte de que estén configuradas correctamente.
+Aquí tienes un ejemplo corregido:
+
+```dummy
+para (var i = 0; i < 5; i++) {
+  // Código dentro del bucle
+}
+```
+En este caso, hemos corregido la condición para que el bucle se ejecute mientras `i` sea menor que `5` y hemos configurado
+la expresión de incremento (`i++`) para que aumente el valor de i en cada iteración.
+Esto soluciona el error y permite que el bucle funcione como se espera.

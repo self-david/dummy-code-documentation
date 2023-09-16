@@ -1,0 +1,40 @@
+---
+sidebar_position: 30
+---
+
+# Sin llaves
+Este error ocurre cuando una declaración condicional no envuelve su bloque de código en llaves {}.
+En la mayoria de lenguajes las llaves son opcionales para bloques de una sola línea,
+pero omitirlas puede llevar a comportamientos inesperados y errores si se agrega más código en el futuro.
+
+## Ejemplo📝
+
+```dummy
+si (condicion)
+  imprimir('Mensaje A'); // Falta llaves en el bloque
+  imprimir('Mensaje B');
+```
+En este ejemplo, la declaración `si` no utiliza llaves para delimitar su bloque de código, lo que significa que solo la primera
+instrucción `imprimir('Mensaje A');` está condicionada por el `si`, mientras que la segunda instrucción `imprimir('Mensaje B');`
+no lo está, lo que podría no ser lo deseado.
+
+## Explicación
+El uso de llaves {} para delimitar los bloques de código en las declaraciones condicionales ayuda a clarificar cuál es el alcance
+de las instrucciones condicionadas y previene errores potenciales al agregar más código.
+
+## Causa
+Este error suele ocurrir debido a una falta de atención al escribir el código o cuando se busca ahorrar espacio utilizando una sola línea
+sin llaves en una declaración condicional.
+
+## Solución
+Para solucionar el error, siempre debes utilizar llaves {} para delimitar los bloques de código en las declaraciones condicionales,
+incluso si el bloque tiene una sola línea. Aquí tienes un ejemplo corregido:
+
+```dummy
+si (condicion) {
+  imprimir('Mensaje A');
+}
+imprimir('Mensaje B');
+```
+En este caso, hemos agregado llaves para delimitar el bloque de código dentro del `si`, lo que asegura que ambas instrucciones estén
+condicionadas por la expresión `si` y evita el error.

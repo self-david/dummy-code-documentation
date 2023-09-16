@@ -1,0 +1,46 @@
+---
+sidebar_position: 17
+---
+
+# Caso sin terminar
+Este error ocurre cuando tienes una declaración `elegir` y no incluyes una sentencia `terminar` o `regresar` después de un caso.
+Cuando no se utiliza `terminar` o `regresar`, el flujo de ejecución continúa hacia el siguiente caso sin importar si la condición es verdadera o falsa.
+
+## Ejemplo📝
+
+```dummy
+elegir (valor) {
+  caso 1:
+    // Código para el caso 1
+  caso 2:
+    // Código para el caso 2
+}
+```
+En este ejemplo, si valor es igual a 1, se ejecutarán tanto el código del "caso 1" como el código del "caso 2" debido a la falta de lasentencia `terminar`.
+Esto provoca el error.
+
+## Explicación
+En una declaración `elegir`, cada caso debería ser independiente y debería incluir una sentencia `terminar` o `regresar` al final
+para evitar que el flujo de ejecución continúe hacia otros casos no deseados.
+
+## Causa
+Este error suele ocurrir debido a una falta de atención al escribir una declaración `elegir` y olvidar incluir la sentencia `terminar` o `regresar`
+para controlar el flujo de ejecución.
+
+## Solución
+Para solucionar el error, asegúrate de incluir una sentencia `terminar` o `regresar` al final de cada caso en una declaración `elegir`.
+Esto controlará el flujo de ejecución y garantizará que solo se ejecute el código del caso que coincide con la condición.
+Aquí tienes un ejemplo corregido:
+
+```dummy
+elegir (valor) {
+  caso 1:
+    // Código para el caso 1
+    terminar;
+  caso 2:
+    // Código para el caso 2
+    terminar;
+}
+```
+En este caso, hemos agregado la sentencia `terminar` al final de cada caso para evitar que el flujo de ejecución continúe hacia otros casos.
+Esto elimina el error y asegura un comportamiento correcto en la declaración `elegir`.

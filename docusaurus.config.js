@@ -1,67 +1,80 @@
-/**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 const theme = require('./src/theme/theme');
 
+/** @returns {Promise<import('@docusaurus/types').Config>} */
+module.exports = async function createConfigAsync() {
+  return {
+    title: 'Dummy code',
+    tagline: 'Ahora puedes programar en español',
+    organizationName: 'self-david',
+    projectName: 'dummy-code-documentation',
+    baseUrl: '/',
+    baseUrlIssueBanner: true,
+    url: 'https://self-david.github.io/',
 
-
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: 'Dummy code',
-  tagline: 'Ahora puedes programar en español',
-  favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://self-david.github.io/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'self-david', // Usually your GitHub org/user name.
-  projectName: 'dummy-code-documentation', // Usually your repo name.
-
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-  deploymentBranch: 'gh-pages',
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
+    trailingSlash: true,
+    onBrokenLinks: 'ignore', // 'throw',
+    onBrokenMarkdownLinks: 'warn',
+    favicon: 'img/docusaurus.ico',
+    customFields: {
+      crashTest: false,
+      isDeployPreview: false,
+      description: 'dummy code description',
+    },
+    plugins: [
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'errors',
+          path: 'errors',
+          routeBasePath: 'errors',
+          // remarkPlugins: [npm2yarn],
+          editCurrentVersion: false,
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+          // showLastUpdateAuthor: true,
+          // showLastUpdateTime: true,
+        }),
+      ],
     ],
-  ],
+    presets: [
+      [
+        'classic',
+        /** @type {import('@docusaurus/preset-classic').Options} */
+        ({
+          docs: {
+            sidebarPath: require.resolve('./sidebars.js'),
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            editUrl: 'https://github.com/self-david/dummy-code-documentation/tree/main/',
+            routeBasePath: '/methods',
+            // routeBasePath: '/',
+            // path: 'docs',
+            // sidebarPath: 'sidebars.js',
+            admonitions: {
+              keywords: ['my-custom-admonition'],
+            },
+            showLastUpdateAuthor: true,
+            showLastUpdateTime: true,
+          },
+          blog: {
+            showReadingTime: true,
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            editUrl: 'https://github.com/self-david/dummy-code-documentation/tree/main/',
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+            postsPerPage: 5,
+            blogSidebarCount: 'ALL',
+            blogSidebarTitle: 'All our posts',
+          },
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+        }),
+      ],
+    ],
+
+    themeConfig:
+      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -75,12 +88,19 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Metodo',
+            label: 'Metodos',
+          },
+          {
+            to: '/errors',
+            label: 'Errores',
+            position: 'left',
+            activeBaseRegex: `/errors/`,
+            // sidebarId: 'tutorialSidebar',
           },
           {to: 'blog', label: 'blog', position: 'left'},
           // Please keep GitHub link to the right for consistency.
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/self-david/dummy-code-documentation',
             label: 'GitHub',
             position: 'right',
           },
@@ -90,45 +110,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Learn',
+            title: 'Informacion',
             items: [
               {
-                label: 'Style Guide',
-                to: 'docs/',
+                label: 'Metodos',
+                to: 'methods/',
               },
               {
-                label: 'Second Doc',
-                to: 'docs/doc2',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: 'blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Errores',
+                to: 'errors/',
               },
             ],
           },
@@ -137,38 +127,28 @@ const config = {
             // Please do not remove the privacy and terms, it's a legal requirement.
             items: [
               {
-                label: 'Privacy',
+                label: 'Privacidad',
                 href: 'https://opensource.fb.com/legal/privacy/',
               },
               {
-                label: 'Terms',
+                label: 'Terminos y condiciones',
                 href: 'https://opensource.fb.com/legal/terms/',
-              },
-              {
-                label: 'Data Policy',
-                href: 'https://opensource.fb.com/legal/data-policy/',
-              },
-              {
-                label: 'Cookie Policy',
-                href: 'https://opensource.fb.com/legal/cookie-policy/',
               },
             ],
           },
         ],
         logo: {
-          alt: 'Meta Open Source Logo',
+          alt: 'Dummy code Logo',
           // This default includes a positive & negative version, allowing for
           // appropriate use depending on your site's style.
           src: '/img/meta_opensource_logo_negative.svg',
-          href: 'https://opensource.fb.com',
+          href: 'https://dummycode.qahub.dev',
         },
-        // Please do not remove the credits, help to publicize Docusaurus :)
-        copyright: `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc. Built with Docusaurus.`,
+        copyright: 'Copyright © 2023 Dummy code.',
       },
       prism: {
         theme,
       },
     }),
+  };
 };
-
-module.exports = config;

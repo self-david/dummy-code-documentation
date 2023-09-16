@@ -1,0 +1,38 @@
+---
+sidebar_position: 22
+---
+
+# Codigó inalcanzable
+Este error ocurre cuando tienes código que se encuentra en una posición inalcanzable en tu programa. Es decir,
+dicho código nunca se ejecutará debido a que una sentencia de `regresar` se encuentra antes y finaliza la ejecución de la función
+
+## Ejemplo📝
+
+```dummy
+funcion suma(a, b) {
+  regresar a + b;
+  imprimir("Este mensaje nunca se muestra");
+}
+```
+
+
+## Explicación
+El código inalcanzable se considera un error porque no tiene ningún propósito y puede indicar un problema en la lógica del programa.
+Las sentencias de `regresar` finalizan la ejecución de una función, por lo que cualquier código que se encuentre después de ellas nunca se ejecutará.
+
+## Causa
+ Este error suele ocurrir debido a un error lógico en el código, como la ubicación incorrecta de una sentencia `regresar`, o una falta de atención al escribir el código.
+
+## Solución
+Para solucionar el error, debes revisar la ubicación de las sentencias de `regresar` en tu código y asegurarte de que no haya código inalcanzable después de ellas.
+En caso de ser necesario, reorganiza tu código para que tenga sentido y asegúrate de que todas las partes del mismo sean ejecutables y útiles.
+Aquí tienes un ejemplo corregido:
+
+```dummy
+funcion suma(a, b) {
+  imprimir("Este mensaje siempre se muestra");
+  regresar a + b;
+}
+```
+En este caso, hemos reorganizado el código para que el mensaje se muestre antes del `regresar`, de modo que sea alcanzable y útil.
+Esto elimina el error y asegura que el código funcione correctamente.

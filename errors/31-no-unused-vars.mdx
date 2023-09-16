@@ -1,0 +1,40 @@
+---
+sidebar_position: 30
+---
+
+# Variable sin usar
+Este error ocurre cuando declaras una variable en tu código, pero nunca la utilizas en ninguna parte del programa.
+Esto se considera una mala práctica porque crea código innecesario y puede dificultar la lectura y el mantenimiento del código.
+
+## Ejemplo📝
+
+```dummy
+funcion ejemplo() {
+  const variable1 = 'estoy siendo usada';
+  const variable2 = 'no soy usada en ningun lugar';
+
+  imprimir(variable1);
+}
+```
+En este ejemplo, la variable `variable2` han sido declaradas pero nunca se utilizan en ninguna parte del código.
+
+## Explicación
+En la programación, es importante mantener un código limpio y eficiente.
+Las variables que no se utilizan contribuyen a la complejidad innecesaria y pueden llevar a errores al confundir a otros programadores que lean el código.
+
+## Causa
+Este error suele ocurrir debido a la falta de atención al escribir el código o cuando se eliminan partes del código que utilizaban previamente la variable,
+pero la declaración de la variable se ha dejado intacta.
+
+## Solución
+Para solucionar el error, simplemente elimina las declaraciones de las variables que no se utilizan en el código o si las piensas usar en un futuro comentalas.
+Esto ayuda a mantener el código más limpio y legible. Aquí tienes un ejemplo corregido:
+
+```dummy
+funcion ejemplo() {
+  const variable1 = 'estoy siendo usada';
+  // const variable2 = 'no soy usada en ningun lugar';
+
+  imprimir(variable1);
+}
+```

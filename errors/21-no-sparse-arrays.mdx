@@ -1,0 +1,31 @@
+---
+sidebar_position: 21
+---
+
+# Listas con huecos
+Este error ocurre cuando creas una lista y dejas elementos faltantes entre las comas,
+lo que resulta en una estructura de arreglo con "huecos" en lugar de elementos definidos.
+
+## Ejemplo📝
+
+```dummy
+const miLista = [1, , 3];
+```
+En este ejemplo, el segundo elemento de la lista está ausente entre las comas, lo que provoca el error.
+
+## Explicación
+Las listas deben definirse con elementos concretos en cada posición. Dejar elementos faltantes crea listas `sparse` o con `huecos`,
+lo que puede causar comportamientos inesperados y dificultar la manipulación de los datos en el arreglo.
+
+## Causa
+Este error suele ocurrir debido a un error tipográfico o a una falta de atención al definir un arreglo.
+
+## Solución
+Para solucionar el error, asegúrate de definir todos los elementos del arreglo de manera explícita y sin dejar huecos.
+Puedes utilizar `nulo` o cualquier otro valor para representar elementos vacíos si es necesario. Aquí tienes un ejemplo corregido:
+
+```dummy
+const miArray = [1, nulo, 3]; // Definimos elementos vacíos con 'nulo'
+```
+En este caso, hemos reemplazado el hueco con `nulo` para asegurarnos de que el arreglo tenga elementos definidos en cada posición.
+Esto elimina el error y hace que el arreglo sea más predecible y fácil de trabajar.

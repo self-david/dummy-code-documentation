@@ -1,0 +1,37 @@
+---
+sidebar_position: 23
+---
+
+# Un ciclo
+Este error ocurre cuando tienes un bucle que está diseñado de tal manera que su condición de terminación
+nunca se cumple o cuando el cuerpo del bucle es inalcanzable debido a condiciones anteriores.
+
+## Ejemplo📝
+
+```dummy
+mientras (condicion) {
+  // Código del bucle
+  terminar
+}
+```
+En este ejemplo, el bucle `mientras` tiene el codigo `terminar`, lo que significa que solo se ejecutara una vez. Esto provoca el error.
+
+## Explicación
+Los bucles deben estar diseñados de manera que puedan terminar en algún momento o que el cuerpo del bucle pueda alcanzarse en función de las condiciones previas.
+Un bucle inalcanzable o que solo se ejecuta una sola vez no tiene un propósito útil y puede causar problemas en el flujo de ejecución de tu programa.
+
+## Causa
+Este error suele ocurrir debido a errores lógicos en el diseño del bucle, como una condición de terminación incorrecta o una falta de atención al escribir el código.
+
+## Solución
+Para solucionar el error, debes revisar la condición del bucle y asegurarte de que tenga sentido y que el bucle pueda terminar en algún momento.
+Si el bucle no es necesario o su condición de terminación es incorrecta, debes modificar o eliminar el bucle según corresponda. Aquí tienes un ejemplo corregido:
+```dummy
+mientras (condicion) {
+  // Código del bucle
+  si (condicion2) {
+    terminar
+  }
+}
+```
+En este caso solo queremos `terminar` la ejecucion del `mientras` cuando ocurre un caso especifico.

@@ -1,0 +1,49 @@
+---
+sidebar_position: 29
+---
+
+# Bloques inconsistentes
+Este error ocurre cuando una función tiene múltiples rutas de ejecución (como condicionales) y no todas ellas devuelven un valor.
+una función debe devolver un valor de manera consistente en todas sus posibles rutas de ejecución.
+
+## Ejemplo📝
+
+```dummy
+funcion obtenerMensaje(condicion) {
+  si (condicion) {
+    regresar "Mensaje A";
+  } sino {
+    // Falta un retorno en esta rama
+  }
+}
+
+const mensaje = obtenerMensaje(false);
+imprimir(mensaje); // Puede ser "indefinido"
+```
+En este ejemplo, la función `obtenerMensaje` tiene dos rutas de ejecución: una cuando condicion es verdadera y otra cuando es falsa.
+Sin embargo, solo se devuelve un valor en la primera ruta, lo que provoca el error.
+
+## Explicación
+Es importante que una función devuelva un valor en todas las rutas de ejecución posibles para garantizar que siempre haya un resultado definido
+y predecible cuando se llama a la función.
+
+## Causa
+Este error suele ocurrir debido a una falta de atención al escribir el código, especialmente al manejar casos en los que una función puede tener
+diferentes caminos de ejecución.
+
+## Solución
+Para solucionar el error, debes asegurarte de que la función devuelva un valor en todas las rutas de ejecución posibles.
+En el ejemplo anterior, podrías agregar un valor de retorno en la rama else para que la función devuelva un valor en ambos casos:
+```dummy
+funcion obtenerMensaje(condicion) {
+  si (condicion) {
+    regresar "Mensaje A";
+  } sino {
+    regresar "Mensaje B"; // Agregamos un retorno en esta rama
+  }
+}
+
+const mensaje = obtenerMensaje(false);
+imprimir(mensaje); // Siempre tendrá un valor definido
+```
+Al agregar un retorno en todas las rutas de ejecución, el error se soluciona y se garantiza un comportamiento predecible de la función.
