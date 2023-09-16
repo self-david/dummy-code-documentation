@@ -1,0 +1,25 @@
+---
+sidebar_position: 12.1
+---
+
+# reemplazarTodo
+Este toma dos argumentos: el primer argumento es la subcadena que deseas reemplazar, y el segundo argumento es la subcadena con la que deseas reemplazar todas las ocurrencias de la primera subcadena. Este método busca todas las coincidencias de la primera subcadena en la cadena original y las reemplaza con la segunda subcadena.
+
+## Ejemplo📝
+
+```dummy
+var texto = "La manzana es una fruta deliciosa. Me encanta comer manzana.";
+
+var textoModificado = texto.reemplazarTodo("manzana", "pera");
+
+imprimir("Texto original:", texto);
+imprimir("Texto modificado:", textoModificado);
+```
+Salida:
+
+```dummy
+// Texto original: La manzana es una fruta deliciosa. Me encanta comer manzana.
+// Texto modificado: La pera es una fruta deliciosa. Me encanta comer pera.
+```
+
+Recuerda que este metodo reemplaza todas las ocurrencias de la subcadena en la cadena original y devuelve una nueva cadena con los cambios. La cadena original no se modifica.

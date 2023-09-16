@@ -1,0 +1,30 @@
+---
+sidebar_position: 13
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# actualizarAño
+Se utiliza para establecer el año en un objeto Date. Puedes usar este método para cambiar el año de una fecha existente o para crear una nueva fecha con el año deseado.
+
+## Ejemplo📝
+
+El método actualizarAño toma uno, dos o tres argumentos. Si se pasa solo un argumento, este se interpreta como el año y cambia el año de la fecha. Si se pasan dos argumentos, el primero se interpreta como el año y el segundo como el mes (de 0 a 11). Si se pasan tres argumentos, el primero es el año, el segundo es el mes y el tercero es el día del mes.
+
+
+```dummy
+var fecha = crear Fecha("2023-07-15");
+
+// Establecer el año en 2025
+fecha.actualizarAño(2025);
+
+imprimir("Fecha después de establecer el año:", fecha);
+```
+Salida:
+
+```dummy
+// Fecha después de establecer el año: Fri Jul 15 2025 00:00:00 GMT-0700 (Pacific Daylight Time)
+```
+Es útil cuando necesitas ajustar el año en un objeto Fecha, como cuando trabajas con fechas futuras o pasadas.

@@ -1,0 +1,30 @@
+---
+sidebar_position: 4
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# enPares
+
+Se usa para convertir una lista de pares clave-valor en un objeto. Toma una matriz de pares clave-valor (cada par representado como una lista) y crea un objeto a partir de ellos.
+
+
+## Ejemplo📝
+
+```dummy
+var pares = [["a", 1], ["b", 2], ["c", 3]];
+
+var objeto = Objecto.enPares(pares);
+
+imprimir("Objeto resultante:", objeto);
+```
+Salida:
+
+```dummy
+// Objeto resultante: { a: 1, b: 2, c: 3 }
+```
+Usamos el método enPares para crear un objeto a partir de esta matriz. El resultado es un objeto con las propiedades y valores correspondientes a los pares clave-valor en la matriz.
+
+Este método es útil cuando tienes una lista de datos en forma de pares clave-valor y deseas convertirlos en un objeto para facilitar su manipulación y acceso.

@@ -1,0 +1,56 @@
+---
+sidebar_position: 5
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# potencia
+Eleva un número a una potencia específica.
+Usar a ** b genera el mismo resultado y resulta ser mas lagible, por lo que recomendamos utilizar esta sintaxis
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+```dummy
+var base = 3;
+var exponente = 4;
+var resultado = Mate.potencia(base, exponente);
+
+imprimir(base + " elevado a la potencia de " + exponente + " es: " + resultado);
+```
+
+Salida:
+
+```dummy
+// 3 elevado a la potencia de 4 es: 81
+```
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+
+```dummy
+// Calcula 2 elevado a la 3ra potencia (2^3)
+var base = 2;
+var exponente = 3;
+var resultado = base ** exponente;
+
+imprimir(resultado);
+```
+
+Salida:
+
+```dummy
+// 8
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

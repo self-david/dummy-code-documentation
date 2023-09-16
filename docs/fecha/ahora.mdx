@@ -1,0 +1,27 @@
+---
+sidebar_position: 10
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Ahora
+
+Se utiliza para obtener el valor numérico correspondiente a la fecha y hora actual en milisegundos. A diferencia del método tiempo, no requiere crear una instancia de Fecha y se llama directamente en el objeto Fecha.
+
+## Ejemplo📝
+
+```dummy
+var tiempoActual = Fecha.ahora();
+
+imprimir("Valor numérico de la fecha y hora actual:", tiempoActual);
+
+```
+Salida:
+
+```dummy
+// Valor numérico de la fecha y hora actual: 1683856428359
+```
+
+Al igual que con el método tiempo, este valor numérico es útil para realizar cálculos de tiempo y para comparar fechas.

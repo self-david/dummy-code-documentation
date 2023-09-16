@@ -1,0 +1,32 @@
+---
+sidebar_position: 12
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# actualizarFecha
+Establece el día del mes de un objeto Fecha. Permite modificar el día del mes de una fecha existente, sin afectar a otros componentes de la fecha como el mes o el año.
+
+## Ejemplo📝
+La fecha modificada se refleja en el propio objeto Fecha, y también se devuelve el valor numérico correspondiente al nuevo día del mes.
+
+
+```dummy
+var fecha = crear Fecha(); // Fecha actual
+var nuevoDia = 20;
+
+var diaDelMes = fecha.actualizarFecha(nuevoDia); // Establecer el día del mes
+
+imprimir("Nueva fecha:", fecha);
+imprimir("Día del mes modificado:", diaDelMes);
+
+```
+Salida:
+
+```dummy
+// Nueva fecha: Tue Jul 20 2023 15:05:23 GMT-0700 (Pacific Daylight Time)
+// Día del mes modificado: 1626767123472
+```
+El método actualizarFecha es útil cuando necesitas cambiar el día del mes en una fecha, por ejemplo, para calcular una fecha futura o pasada en una aplicación de calendario.

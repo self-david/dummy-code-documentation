@@ -1,0 +1,28 @@
+---
+sidebar_position: 1
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# asen
+Sirve para calcular el arcoseno de un número, es decir, el ángulo cuyo seno es el número proporcionado.
+
+## Ejemplo📝
+
+```dummy
+var numero = 0.5; // Un número entre -1 y 1
+
+var arcoseno = Mate.asen(numero);
+
+imprimir("El arcoseno de " + numero + " es: " + arcoseno);
+```
+Recuerda que el valor proporcionado a .asen() debe estar en el rango de -1 a 1, de lo contrario, obtendrás resultados imprecisos o NeN (no un número).
+
+Salida:
+
+```dummy
+// El arcoseno de 0.5 es: 0.5235987755982989
+```
+Ten en cuenta que el resultado estará en radianes, por lo que si deseas el resultado en grados, debes convertirlo usando la fórmula adecuada.

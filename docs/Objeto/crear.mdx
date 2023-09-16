@@ -1,0 +1,35 @@
+---
+sidebar_position: 2
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# crear
+
+Se utiliza para crear un nuevo objeto que tiene un prototipo específico (objeto prototipo) y, opcionalmente, puede contener propiedades adicionales. Es una forma de crear un objeto que hereda propiedades y métodos de otro objeto.
+Al ser un objeto, si solo se asigna como b = a se creara una referencia y no una copia, por lo que si cambias un valor de b tambien se cambiara en a y viseversa
+
+
+## Ejemplo📝
+
+```dummy
+var objetoPrototipo = { a: 1, b: 2 };
+
+var nuevoObjeto = Object.crear(objetoPrototipo);
+
+imprimir("Nuevo objeto:", nuevoObjeto);
+imprimir("Propiedad 'a' en el nuevo objeto:", nuevoObjeto.a);
+imprimir("Propiedad 'b' en el nuevo objeto:", nuevoObjeto.b);
+```
+Salida:
+
+```dummy
+// Nuevo objeto: {}
+// Propiedad 'a' en el nuevo objeto: 1
+// Propiedad 'b' en el nuevo objeto: 2
+```
+En este ejemplo, creamos un nuevo objeto nuevoObjeto utilizando el método crear y pasando objetoPrototipo como argumento. El objeto resultante hereda las propiedades a y b del objetoPrototipo.
+
+Es importante destacar que el nuevo objeto creado no tiene propiedades propias adicionales. Solo hereda las propiedades del objeto prototipo.

@@ -13,19 +13,6 @@ Se utiliza para combinar o unir dos o más cadenas de texto en una sola cadena. 
 
 ## Ejemplo📝
 
-```dummy
-var saludo = "Hola";
-var destino = "mundo";
-var textoConcatenado = saludo.concatenar(destino);
-imprimir(textoConcatenado);
-```
-salida
-```dummy
-// Hola Mundo
-```
-
-En este caso, utilizamos el método concatenar() en la variable saludo, pasando como argumento la variable destino para unir las dos cadenas. El resultado es la cadena "Hola mundo", que es la concatenación de "Hola" y "mundo".
-
 El método concatenar() es útil cuando necesitas combinar diferentes partes de una cadena de texto, por ejemplo, al construir mensajes o mostrar información en la interfaz de usuario.
 
 ```mdx-code-block
@@ -40,6 +27,7 @@ var nombreAplicacion = "Dummy code";
 var mensajeBienvenida = "Hola,".concatenar(nombreUsuario, "bienvenido a", nombreAplicacion);
 imprimir(mensajeBienvenida);
 ```
+
 Salida:
 ```dummy
 // Hola,oscarbienvenido aDummy code
@@ -61,6 +49,7 @@ var nombreAplicacion = "Dummy code";
 var mensajeBienvenida = "Hola, ".concatenar(nombreUsuario, " bienvenido a ", nombreAplicacion);
 imprimir(mensajeBienvenida);
 ```
+
 Salida:
 ```dummy
 // Hola, oscar bienvenido a Dummy code

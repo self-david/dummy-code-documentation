@@ -13,20 +13,15 @@ El método determina si una `cadena` termina con los caracteres de una `cadena` 
 
 ```dummy
 const cadena = "Hola, mundo!";
-
-<<<<<<< HEAD:docs/Cadenas/terminaCon.mdx
 var resultado1 = cadena.terminaCon("!"); 
 var resultado2 = cadena.terminaCon("mundo");
+imprimir (resultado1);
+imprimir (resultado2);
 ```
 Salida:
 ```dummy
 // Resultado: verdadero
 // Resultado: falso
-=======
-consola.log(cadena.terminaCon("!")); // Resultado: verdadero
-consola.log(cadena.terminaCon("mundo")); // Resultado: falso
-consola.log(cadena.terminaCon("mundo!")); // Resultado: verdadero
->>>>>>> 510035d5bc37205927e7a50f4c9b1e3819f71b3e:docs/Cadenas/terminaCon.md
 ```
 
 te puedes dar cuenta de que puedes usar desde uno hasta n caracteres, pero estos deben coincidir al 100% para que regrese verdadero.

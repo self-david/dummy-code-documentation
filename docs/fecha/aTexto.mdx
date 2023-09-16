@@ -1,0 +1,26 @@
+---
+sidebar_position: 21
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# aTexto
+se utiliza para obtener una representación de cadena de texto de un objeto Fecha. Esta representación de cadena incluye tanto la parte de la fecha como la parte de la hora del objeto Fecha en un formato específico.
+
+## Ejemplo📝
+
+```dummy
+var fecha = crear Fecha("2023-09-08T15:30:00");
+
+var fechaFormateada = fecha.aTexto();
+
+imprimir("Fecha y hora formateadas:", fechaFormateada);
+```
+Salida:
+
+```dummy
+// Fecha y hora formateadas: Fri Sep 08 2023 15:30:00 GMT+0000 (Coordinated Universal Time)
+```
+Es útil cuando necesitas mostrar tanto la parte de la fecha como la parte de la hora de un objeto Fecha.
