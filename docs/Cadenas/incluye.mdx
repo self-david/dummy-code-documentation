@@ -34,8 +34,9 @@ En este caso, `incluye("estás")` retorna verdadero porque la palabra "estás" e
 ```dummy
 var cadena = "Hola, este es un ejemplo de cadena.";
 var subcadena = "ejemplo";
+const posicionInicial = 10; // es la posicion donde comienza a buscar no la posicion exacta
 
-var resultado = cadena.incluye(subcadena, 10);
+var resultado = cadena.incluye(subcadena, posicionInicial);
 
 si (resultado) {
   imprimir("La subcadena se encuentra en la posición especificada.");
