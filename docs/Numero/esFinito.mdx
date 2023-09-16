@@ -1,0 +1,32 @@
+---
+sidebar_position: 6
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# EsFinito
+
+Determina si un valor es un número finito o no. Retorna true si el valor es un número finito y false si el valor es infinito, -infinito, NeN o cualquier otro valor no numérico.
+
+## Ejemplo📝
+
+```dummy
+var numero1 = 5;
+var numero2 = Infinito;
+var numero3 = "Hola";
+
+imprimir("¿Es el número 5 finito? " + Number.esFinito(numero1));
+imprimir("¿Es el valor Infinito finito? " + Number.esFinito(numero2));
+imprimir("¿Es la cadena 'Hola' finita? " + Number.esFinito(numero3));
+
+```
+Salida:
+
+```dummy
+// ¿Es el número 5 finito? true
+// ¿Es el valor infinito finito? false
+// ¿Es la cadena 'Hola' finita? false
+
+```

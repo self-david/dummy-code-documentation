@@ -14,18 +14,21 @@ Este método toma un valor entero y devuelve una nueva `cadena` que consta de la
 
 
 ```dummy
-var texto = "Hola, este es un ejemplo de texto.";
+var texto = "Hola, este es un ejemplo de texto";
 
-var posic = 7;
-var resultado = texto.posicion(posic);
+var pos = 7;
+var resultado = texto.posicion(pos);
 
 imprimir("El carácter en la posición " + posic + " es: " + resultado);
+imprimir("El ultimo carácter es: " + texto.posicion(-1));
 ```
 Salida:
 ```dummy
-//El carácter en la posición 7 es: e
+// El carácter en la posición 7 es: e
+// El ultimo carácter es: o
 ```
-En este ejemplo, estamos utilizando el método posicion() para acceder al carácter en la posición especificada (en este caso, la posición 7) en la cadena de texto. 
+En este ejemplo, estamos utilizando el método posicion() para acceder al carácter en la posición especificada (en este caso, la posición 7) en la cadena de texto,
+y al pasarle un numero negativo hace la busqueda al revez por lo que comienza a buscar por el ultimo caracter
 
 ## Sintaxis🔤
 

@@ -77,7 +77,7 @@ const config = {
             position: 'left',
             label: 'Metodo',
           },
-          {to: 'blog', label: 'Blog', position: 'left'},
+          {to: 'blog', label: 'blog', position: 'left'},
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://github.com/facebook/docusaurus',

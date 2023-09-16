@@ -19,14 +19,15 @@ Representa el valor más grande que se puede representar para un número de punt
 ```
 
 ```dummy
-var maximo = Numero.max;
-var demasiadoGrande = maximo + 1;
-imprimir("Un número más grande que el máximo es: " + demasiadoGrande);
+var numeroGrande = Numero.max;
+var resultado = numeroGrande * 2;
+
+imprimir("Número grande:", numeroGrande);
 ```
 
 Salida:
 ```dummy
-//"Un número más grande que el máximo es: Infinito"
+// Número grande: 1.7976931348623157e+308
 ```
 En este caso, sumamos 1 al valor de max, lo cual nuevamente resulta en un número que es mayor que el valor máximo representable, por lo que obtenemos "Infinito".
 ```mdx-code-block
@@ -40,7 +41,7 @@ imprimir("El valor máximo es igual a sí mismo: " + esMaximo);
 ```
 Salida:
 ```dummy
-//"El valor máximo es igual a sí mismo: cierto"
+// "El valor máximo es igual a sí mismo: cierto"
 ```
 
 En este ejemplo, comparamos el valor de max con max usando el operador de igualdad estricta (===). Como se espera, la comparación es verdadera ya que el valor máximo es igual a sí mismo. Por lo tanto, obtenemos "cierto" como resultado.
@@ -49,6 +50,4 @@ En este ejemplo, comparamos el valor de max con max usando el operador de iguald
 </Tabs>
 </BrowserWindow>
 ```
-Los valores mayores que max se representan como infinito y perderán su valor  actual.
-
 Dado que max es una propiedad estática de Numero, siempre se usa como Numero.max, en lugar de como una propiedad de un valor numérico.

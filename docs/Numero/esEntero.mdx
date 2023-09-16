@@ -16,15 +16,15 @@ var numero1 = 42;
 var numero2 = 3.14;
 var numero3 = "Hola";
 
-imprimir("¿Es el número 42 un entero? " + esEntero(numero1));
-imprimir("¿Es el número 3.14 un entero? " + esEntero(numero2));
-imprimir("¿Es la cadena 'Hola' un entero? " + esEntero(numero3));
+imprimir("¿Es el número 42 un entero? " + Number.esEntero(numero1));
+imprimir("¿Es el número 3.14 un entero? " + Number.esEntero(numero2));
+imprimir("¿Es la cadena 'Hola' un entero? " + Number.esEntero(numero3));
 ```
 Salida:
 
 ```dummy
-//¿Es el número 42 un entero? verdadero
-//¿Es el número 3.14 un entero? falso
-//¿Es la cadena 'Hola' un entero? falso
+// ¿Es el número 42 un entero? verdadero
+// ¿Es el número 3.14 un entero? falso
+// ¿Es la cadena 'Hola' un entero? falso
 ```
 Es útil cuando se necesita asegurarse de que un valor sea un número entero antes de realizar ciertas operaciones matemáticas o al validar datos de entrada en una aplicación.

@@ -1,0 +1,49 @@
+---
+sidebar_position: 6
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# aleatorio
+Genera un número decimal aleatorio entre 0 (inclusive) y 1 (excluyendo 1).
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var numeroAleatorio = Mate.aleatorio()*101;
+
+imprimir("Número aleatorio entre 0 y 100: " + numeroAleatorio);
+```
+Salida:
+
+```dummy
+// Número aleatorio entre 0 y 1: 64
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var numeroAleatorio = 100 + Mate.aleatorio() * 400;
+
+imprimir("Número aleatorio entre 100 y 500: " + numeroAleatorio);
+```
+Salida:
+```dummy
+// Número aleatorio entre 100 y 500: 250
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

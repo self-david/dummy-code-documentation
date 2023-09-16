@@ -13,18 +13,18 @@ Verificar si un valor no es un número (NeN). Retorna verdadero si el valor no e
 ```dummy
 var valor1 = 42;
 var valor2 = "ABC";
-var valor3 = NaN;
+var valor3 = NeN;
 
-imprimir("¿El valor 42 no es un número? " + esNeN(valor1));
-imprimir("¿El valor 'ABC' no es un número? " + esNeN(valor2));
-imprimir("¿El valor NaN no es un número? " + esNeN(valor3));
+imprimir("¿El valor 42 no es un número? " + Numero.esNeN(valor1));
+imprimir("¿El valor 'ABC' no es un número? " + Numero.esNeN(valor2));
+imprimir("¿El valor NeN no es un número? " + Numero.esNeN(valor3));
 ```
 Salida:
 
 ```dummy
-//¿El valor 42 no es un número? falso
-//¿El valor 'ABC' no es un número? verdadero
-//¿El valor NaN no es un número? verdadero
+// ¿El valor 42 no es un número? falso
+// ¿El valor 'ABC' no es un número? verdadero
+// ¿El valor NeN no es un número? verdadero
 ```
 
  útil cuando se necesita asegurarse de que un valor sea un número válido antes de realizar operaciones matemáticas, especialmente si se está obteniendo entrada del usuario o manipulando datos dinámicos.

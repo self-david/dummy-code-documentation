@@ -24,7 +24,7 @@ console.log(frase.incluye("estás"));
 Salida:
 
 ```dummy
-//verdadero
+// verdadero
 ```
 En este caso, `incluye("estás")` retorna verdadero porque la palabra "estás" está presente en la frase.
 ```mdx-code-block
@@ -34,8 +34,9 @@ En este caso, `incluye("estás")` retorna verdadero porque la palabra "estás" e
 ```dummy
 var cadena = "Hola, este es un ejemplo de cadena.";
 var subcadena = "ejemplo";
+const posicionInicial = 10; // es la posicion donde comienza a buscar no la posicion exacta
 
-var resultado = cadena.incluye(subcadena, 10);
+var resultado = cadena.incluye(subcadena, posicionInicial);
 
 si (resultado) {
   imprimir("La subcadena se encuentra en la posición especificada.");
@@ -46,7 +47,7 @@ si (resultado) {
 ```
 Salida:
 ```dummy
-//La subcadena se encuentra en la posición especificada
+// La subcadena se encuentra en la posición especificada
 ```
 En este ejemplo, estamos utilizando el método incluye() para verificar si la subcadena "ejemplo" está presente en la cadena dada, comenzando desde la posición 10. Luego, comprobamos el resultado y mostramos un mensaje en consecuencia.
 ```mdx-code-block
