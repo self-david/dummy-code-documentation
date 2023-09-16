@@ -1,0 +1,52 @@
+---
+sidebar_position: 3
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# NeN
+## (No-es-Numero)
+Se utiliza para indicar que un valor no es un número válido. Es un valor especial que se obtiene cuando se realizan operaciones matemáticas que no tienen un resultado numérico válido.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title='NeN'>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var resultado = Numero('Hola') / 2;
+imprimir("El resultado es: " + resultado);
+```
+Salida:
+
+```dummy
+//El resultado es: NeN
+```
+En este ejemplo, intentamos dividir la cadena "Hola" por 2, lo cual no tiene sentido en términos matemáticos, por lo que el resultado es NeN, indicando que la operación no es válida.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var x = Numero('Hola');
+var y = 5;
+var resultado = x + y;
+imprimir("El resultado es: " + resultado);
+```
+Salida:
+```dummy
+//El resultado es: NeN
+```
+En este otri, la variable x tiene el valor de NeN, y al sumarla con el valor y, el resultado es nuevamente NeN, porque NeN + cualquier_valor = NeN.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+Tener en cuenta que cualquier operación aritmética que involucre NeN siempre dará como resultado NeN, ya que NeN es contagioso. Si un valor en una operación es NeN, el resultado también será NeN, y tener cuidado al trabajar con valores numéricos y verificar si los valores son válidos antes de realizar operaciones matemáticas para evitar obtener NeN como resultado.

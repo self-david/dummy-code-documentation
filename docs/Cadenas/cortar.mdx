@@ -1,0 +1,61 @@
+---
+sidebar_position: 14
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Cortar
+
+Se utiliza para extraer una parte específica de una cadena de texto sin modificar la cadena original. Imagina que tienes una frase y quieres obtener una parte específica de esa frase. 
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+global frase = "Hola mundo";
+var subcadena = frase.cortar(5);
+imprimir(subcadena);
+```
+Salida:
+
+```dummy
+//mundo
+```
+En este ejemplo, hemos creado una variable llamada frase que contiene la cadena "Hola mundo", luego utilizamos el método cortar() en la cadena frase para extraer una subcadena a partir de la posición 5.
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+También puedes utilizar el método cortar() con dos argumentos para especificar el inicio y fin de la subcadena que deseas extraer:
+```dummy
+global frase = "Hola mundo";
+var subcadena = frase.cortar(5, 9);
+imprimir(subcadena);
+```
+Salida:
+```dummy
+//mund
+```
+En este otro ejemplo, utilizamos cortar(5, 9) para extraer la subcadena desde la posición 5 hasta la posición 9 (sin incluir la posición 9).
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+## Sintaxis🔤
+
+```dummy
+cortar(indiceInicio)
+cortar(indiceInicio, indiceFin)
+
+//indiceInicio indica a partir de que posicion se va a extraer la cadena
+//indiceFin indica hasta que posicion se va a extraer la cadena
+```

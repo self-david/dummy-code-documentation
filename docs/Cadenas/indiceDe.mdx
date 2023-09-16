@@ -1,0 +1,56 @@
+---
+sidebar_position: 5
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# IndiceDe
+
+Puedes usarlo para encontrar la posición de la primera aparición de una `subcadena` en una `cadena` de texto. Si la subcadena está presente, el método retorna el índice de la primera ocurrencia; de lo contrario, retorna -1.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+const frase = "Hola, cómo estás?";
+var resultado = frase.indiceDe("estás"); 
+```
+Salida:
+
+```dummy
+// 12
+```
+En este caso, `indiceDe("estás")` retorna 12 porque la palabra "estás" comienza en el índice 12 de la cadena.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+Si la subcadena no se encuentra en la cadena, el método `indiceDe()` retorna -1. Por ejemplo:
+```dummy
+const frase = "Hola, cómo estás?";
+var resultado = frase.indiceDe("adiós");
+```
+Salida:
+```dummy
+//-1
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+## Sintaxis🔤
+
+
+```dummy
+indiceDe(cadena de búsqueda)
+indiceDe(cadena de búsqueda, posición)
+```

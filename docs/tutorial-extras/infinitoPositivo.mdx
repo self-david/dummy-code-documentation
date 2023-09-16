@@ -1,0 +1,49 @@
+---
+sidebar_position: 5
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# InfinitoPositivo
+Es un valor especial que representa el infinito positivo, es decir, el número más grande posible que se puede representar, este valor se obtiene cuando se realiza una operación que resulta en un número muy grande o cuando se divide un número positivo por cero.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title='infinitoPositivo'>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+var resultado = 1 / 0;
+imprimir("El resultado es: " + resultado);
+```
+Salida:
+
+```dummy
+//El resultado es: Infinito
+```
+Estamos dividiendo el número 1 por 0, lo cual no tiene un valor numérico válido y resulta en infinitoPositivo.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+var x = 10;
+var y = POSITIVE_INFINITY;
+var resultado = x * y;
+imprimir("El resultado es: " + resultado);
+```
+Salida:
+```dummy
+//El resultado es: Infinito
+```
+La variable y tiene el valor de infinitoPositivo, y al multiplicarla con el valor x, el resultado es nuevamente infinitoPositivo.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

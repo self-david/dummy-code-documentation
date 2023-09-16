@@ -1,0 +1,54 @@
+---
+sidebar_position: 6
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# UltimoIndiceDe
+
+Dicho método funciona de manera similar. Puedes usarlo para encontrar la posición de la última aparición de una `subcadena` en una `cadena` de texto. Si la `subcadena` está presente, el método retorna el índice de la última ocurrencia; de lo contrario, retorna -1.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+```dummy
+const frase = "Hola, cómo estás? Estoy bien, gracias.";
+var resultado = frase.ultimoIndiceDe("estás"); 
+```
+Salida:
+
+```dummy
+//12
+```
+En este caso, `ultimoIndiceDe("estás")` retorna 12 porque la última aparición de la palabra "estás" comienza en el índice 12 de la cadena.
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+Si la subcadena no se encuentra en la cadena, el método `ultimoIndiceDe()` retorna -1. Por ejemplo:
+```dummy
+const frase = "Hola, cómo estás? Estoy bien, gracias.";
+var resultado = frase.ultimoIndiceDe("adiós");
+```
+Salida:
+```dummy
+// -1
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+
+## Sintaxis🔤
+
+```dummy
+ultimoIndiceDe(cadena de búsqueda)
+ultimoIndiceDe(cadena de búsqueda, posición)
+```

@@ -1,0 +1,40 @@
+---
+sidebar_position: 9
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# RellenarFin
+
+Dicho metodo te permite añadir caracteres al final de una `cadena` de texto hasta que alcance una longitud determinada. Puedes especificar la longitud deseada y el carácter que deseas agregar.
+
+## Ejemplo📝
+
+```dummy
+const palabra = "Hola";
+const rellenarPalabra = palabra.rellenarFin(8, "-");
+
+imprimir(palabraPad);
+```
+Salida:
+```dummy
+//"Hola----"
+```
+En este caso, `rellenarFin(8, "-")` toma la palabra "Hola" y la extiende hasta que tenga una longitud de 8 caracteres agregando el carácter "-" al final.
+
+Si la cadena original ya tiene la longitud igual o mayor que la longitud especificada, el método `rellenarFin()` no realizará ninguna modificación y devolverá la cadena original sin cambios.
+
+El método `rellenarFin()` es útil cuando necesitas asegurarte de que una cadena de texto tenga una longitud específica y deseas agregar caracteres adicionales al final.
+
+## Sintaxis🔤
+```dummy
+rellenarFin(logitudObjetivo)
+rellenarFin(logitudObjetivo, RellenarPalabra)
+
+//RellenarPalabra es igual al caracter o cadena con la que quieres rellenar.
+//logitudObjetivo es el tamaño total deseado de la cadena final.
+```
+
+
+

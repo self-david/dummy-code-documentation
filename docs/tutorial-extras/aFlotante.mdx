@@ -1,0 +1,32 @@
+---
+sidebar_position: 9
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# aFlotante
+
+Se utiliza para convertir una cadena en un número de punto flotante (número con decimales). 
+
+## Ejemplo📝
+
+```dummy
+var cadena1 = "3.14";
+var cadena2 = "123ABC";
+
+var numero1 = aFlotante(cadena1);
+var numero2 = aFlotante(cadena2);
+
+imprimir("Cadena '" + cadena1 + "' convertida a número: " + numero1);
+imprimir("Cadena '" + cadena2 + "' convertida a número: " + numero2);
+```
+Salida:
+
+```dummy
+//Cadena '3.14' convertida a número: 3.14
+//Cadena '123ABC' convertida a número: 123
+```
+
+útil cuando se trabaja con valores numéricos almacenados como cadenas, como cuando se obtiene entrada del usuario o cuando se manejan datos provenientes de fuentes externas.

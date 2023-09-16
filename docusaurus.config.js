@@ -8,6 +8,10 @@
  */
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const theme = require('./src/theme/theme');
+
+
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -16,18 +20,19 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://self-david.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'self-david', // Usually your GitHub org/user name.
+  projectName: 'dummy-code-documentation', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
@@ -60,7 +65,7 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Meta Project',
+        title: 'Dummy Code',
         logo: {
           alt: 'My Meta Project Logo',
           src: 'img/logo.svg',
@@ -70,7 +75,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Metodo',
           },
           {to: 'blog', label: 'Blog', position: 'left'},
           // Please keep GitHub link to the right for consistency.
@@ -159,6 +164,9 @@ const config = {
         },
         // Please do not remove the credits, help to publicize Docusaurus :)
         copyright: `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc. Built with Docusaurus.`,
+      },
+      prism: {
+        theme,
       },
     }),
 };

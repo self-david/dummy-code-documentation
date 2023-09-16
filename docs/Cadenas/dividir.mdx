@@ -1,0 +1,73 @@
+---
+sidebar_position: 14
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Dividir
+
+Se utiliza para dividir una cadena de texto en un arreglo de subcadenas, utilizando un separador especificado. Imagina que tienes una frase y quieres dividirla en palabras individuales.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+global frase = "Hola mundo";
+var palabras = frase.dividir(" ");
+imprimir(palabras);
+```
+Salida:
+
+```dummy
+//["Hola", "mundo"]
+```
+En este ejemplo, hemos creado una variable llamada frase que contiene la cadena "Hola mundo", luego utilizamos el método dividir() en la cadena frase y le pasamos un espacio en blanco como separador. 
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+También puedes utilizar el método dividir() con otros separadores, como comas, puntos o guiones:
+```dummy
+global texto = "Manzana,Naranja,Limón";
+var frutas = texto.dividir(",");
+imprimir(frutas);
+```
+Salida:
+```dummy
+//["Manzana", "Naranja", "Limón"]
+```
+En este otro ejemplo, utilizamos dividir(",") para dividir la cadena texto en un arreglo de frutas, utilizando la coma como separador.
+```mdx-code-block
+</TabItem>
+<TabItem value="var3" label="Variante 3">
+```
+Otro metodo que se puede utilizar es añadiendo un limite al dividir:
+```dummy
+global frase = "Hola,mundo,bienvenido,a,todos";
+var palabras = frase.dividir(",", 3);
+imprimir(palabras);
+```
+Salida:
+```dummy
+//["Hola", "mundo", "bienvenido"]
+```
+En este ejemplo final, hemos creado una variable llamada frase que contiene la cadena "Hola,mundo,bienvenido,a,todos". Utilizamos el método dividir() en la cadena frase y le pasamos una coma como separador y el número 3 como límite.
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+En el caso de la variante 3, el parámetro limite especifica el número máximo de elementos que se deben incluir en el arreglo resultante. En este ejemplo, se incluyen las tres primeras palabras y las siguientes palabras se omiten.
+
+## Sintaxis🔤
+```dummy
+dividir(separador)
+dividir(separador, limite)
+```

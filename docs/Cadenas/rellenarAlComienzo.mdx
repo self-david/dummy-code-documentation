@@ -1,0 +1,37 @@
+---
+sidebar_position: 10
+---
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# RellenarInicio
+
+Este permite agregar caracteres al inicio de una `cadena` de texto hasta que alcance una longitud determinada. Puedes especificar la longitud deseada y el carácter que deseas agregar.
+
+## Ejemplo📝
+```dummy
+const numero = "5";
+const rellenarPalabra = numero.rellenarInicio(4, "0");
+
+imprimir(numeroPad);
+```
+Salida:
+```dummy
+//0005
+```
+En este caso, `rellenarInicio(4, "0")` toma el número "5" y lo extiende hasta que tenga una longitud de 4 dígitos agregando el carácter "0" al inicio.
+
+Si la cadena original ya tiene una longitud igual o mayor que la longitud especificada, el método `rellenarInicio()` no realizará ninguna modificación y devolverá la cadena original sin cambios.
+
+El método `rellenarInicio()` es útil cuando necesitas asegurarte de que una cadena de texto tenga una longitud específica y deseas agregar caracteres adicionales al inicio.
+
+## Sintaxis🔤
+
+```dummy
+rellenarInicio(logitudObjetivo)
+rellenarInicio(logitudObjetivo, RellenarPalabra)
+
+//RellenarPalabra es igual al caracter o cadena con la que quieres rellenar
+//logitudObjetivo es el tamaño total deseado de la cadena final
+```

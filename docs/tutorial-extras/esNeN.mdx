@@ -1,0 +1,30 @@
+---
+sidebar_position: 8
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# EsNeN
+Verificar si un valor no es un número (NeN). Retorna verdadero si el valor no es un número y falso si es un número válido.
+
+## Ejemplo📝
+```dummy
+var valor1 = 42;
+var valor2 = "ABC";
+var valor3 = NaN;
+
+imprimir("¿El valor 42 no es un número? " + esNeN(valor1));
+imprimir("¿El valor 'ABC' no es un número? " + esNeN(valor2));
+imprimir("¿El valor NaN no es un número? " + esNeN(valor3));
+```
+Salida:
+
+```dummy
+//¿El valor 42 no es un número? falso
+//¿El valor 'ABC' no es un número? verdadero
+//¿El valor NaN no es un número? verdadero
+```
+
+ útil cuando se necesita asegurarse de que un valor sea un número válido antes de realizar operaciones matemáticas, especialmente si se está obteniendo entrada del usuario o manipulando datos dinámicos.
