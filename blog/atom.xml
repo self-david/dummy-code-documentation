@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://self-david.github.io/blog</id>
-    <title>Dummy code Blog</title>
+    <title>Bienvenido a Dummy code Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://self-david.github.io/blog"/>
-    <subtitle>Dummy code Blog</subtitle>
+    <subtitle>Bienvenido a Dummy code Blog</subtitle>
     <icon>https://self-david.github.io/img/docusaurus.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
