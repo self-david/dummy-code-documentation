@@ -1,0 +1,58 @@
+---
+sidebar_position: 4
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# llenar
+
+Modifica el arreglo original y toma uno o dos argumentos: el valor con el que deseas llenar los elementos y los índices opcionalmente que especifican en qué parte del arreglo deseas realizar el llenado.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo con valores iniciales
+var arreglo = [1, 2, 3, 4, 5];
+
+// Llenar todo el arreglo con el valor 0
+var llenado = arreglo.llenar(0);
+
+imprimir(llenado);
+```
+Salida:
+
+```dummy
+//[0, 0, 0, 0, 0]
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+// Crear un arreglo de ejemplo con valores iniciales
+var arreglo = [1, 2, 3, 4, 5];
+
+// Llenar solo los elementos desde el índice 1 hasta el índice 3 con el valor 0
+avar llenado = arreglo.llenar(0, 1, 4);
+
+imprimir(llenado);
+```
+Salida:
+```dummy
+//[1, 0, 0, 0, 5]
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

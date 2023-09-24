@@ -1,0 +1,59 @@
+---
+sidebar_position: 15
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# agregar
+Modifica el arreglo original al agregar los elementos y retorna la nueva longitud del arreglo después de la operación.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja'];
+
+// Agregar una nueva fruta al arreglo usando agregar
+var nuevaFruta = 'uva';
+var nuevaLongitud = frutas.agregar(nuevaFruta);
+
+imprimir(nuevaLongitud);
+```
+Salida:
+
+```dummy
+// ['manzana', 'pera', 'naranja', 'uva']
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja'];
+
+// Agregar múltiples frutas al arreglo usando agregar
+var nuevasFrutas = ['mango', 'sandía'];
+var muchasFrutas = frutas.agregar(nuevasFrutas);
+
+imprimir(muchasFrutas);
+```
+Salida:
+```dummy
+// ['manzana', 'pera', 'naranja', 'uva', 'mango', 'sandía']
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

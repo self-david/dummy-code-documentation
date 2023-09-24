@@ -1,0 +1,29 @@
+---
+sidebar_position: 3
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# todos
+
+Se utiliza para verificar si todos los elementos de un arreglo (también conocido como lista) cumplen con una condición específica. Retorna verdadero si todos los elementos cumplen con la condición y falso en caso contrario. No modifica el arreglo original y toma como argumento una función que define la condición de verificación.
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo
+var numeros = [2, 4, 6, 8, 10];
+
+// Verificar si todos los números son pares
+var todosSonPares = numeros.todos(funcion(numero) {
+  retorna numero % 2 === 0;
+});
+imprimir(todosSonPares);
+```
+Salida:
+
+```dummy
+//verdadero
+```

@@ -1,0 +1,27 @@
+---
+sidebar_position: 18
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# alguno
+Se utiliza para verificar si al menos un elemento de un arreglo (también conocido como lista) cumple con cierta condición proporcionada a través de una función de prueba. 
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo con edades
+var edades = [25, 30, 18, 15, 22];
+
+// Verificar si al menos una persona es mayor de edad (mayor o igual a 18 años)
+var esMayorDeEdad = edades.alguno(funcion(edad) {
+  imprimir (edad >= 18);
+});
+```
+Salida:
+
+```dummy
+// verdadero
+```

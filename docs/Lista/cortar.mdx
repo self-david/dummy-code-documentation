@@ -1,0 +1,58 @@
+---
+sidebar_position: 17
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# cortar
+se utiliza para crear una copia superficial de una porción de un arreglo (también conocido como lista) y retornarla como un nuevo arreglo. 
+
+## Ejemplo📝
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+Puedes usar cortar() para seleccionar una porción específica del arreglo original sin modificarlo.
+```dummy
+// Crear un arreglo de ejemplo
+var numeros = [1, 2, 3, 4, 5];
+
+// Crear una copia de una porción del arreglo usando cortar
+var copiaNumeros = numeros.cortar(1, 4);
+
+imprimir(copiaNumeros);
+```
+Salida:
+
+```dummy
+// [2, 3, 4]
+```
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+También puedes usar cortar() sin argumentos para crear una copia completa del arreglo original
+```dummy
+// Crear un arreglo de ejemplo
+var numeros = [1, 2, 3, 4, 5];
+
+// Crear una copia completa del arreglo usando cortar sin argumentos
+var copiaCompleta = numeros.cortar();
+
+// La variable copiaCompleta contendrá una copia completa del arreglo numeros
+imprimir(copiaCompleta);
+```
+Salida:
+```dummy
+// [1, 2, 3, 4, 5]
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+Este método no modifica el arreglo original, pero permite seleccionar elementos específicos del arreglo original y crear un nuevo arreglo con ellos.

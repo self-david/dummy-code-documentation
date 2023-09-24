@@ -6,4 +6,66 @@ import BrowserWindow from '@site/src/components/BrowserWindow';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-#
+# posicion
+
+Te permite acceder a un elemento específico en una Lista según su índice. La principal diferencia entre este método y la forma tradicional de acceder a un elemento es que maneja índices negativos de manera especial y permite acceder a elementos desde el final de la Lista hacia atrás.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+//Crear una lista de ejemplo
+var miLista = [10, 20, 30, 40, 50];
+
+//Obtener el segundo número en la lista
+var numero1 = miLista.posicion[1]; //Esto es como decir "Dame el número en la posición 2"
+imprimir (numero1);
+```
+Salida:
+
+```dummy
+// 20
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+//Crear una lista de ejemplo
+var miLista = [10, 20, 30, 40, 50];
+
+//Obtener el último número en la lista
+var numero2 = miLista.posicion[-1]; //Esto es como decir "Dame el número en la última posición"
+imprimir (numero2);
+```
+Salida:
+```dummy
+// 50
+```
+```mdx-code-block
+</TabItem>
+<TabItem value="var3" label="Variante 3">
+```
+```dummy
+// Crear una lista de ejemplo
+var miLista = [10, 20, 30, 40, 50];
+
+// Intentar obtener un número que no existe
+var numero3 = miLista.posicion[10];
+imprimir (numero3);
+```
+Salida:
+```dummy
+// indefinido
+```
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

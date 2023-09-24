@@ -1,0 +1,27 @@
+---
+sidebar_position: 2
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# concatenar
+Se utiliza para combinar dos o más arreglos (listas) en un solo arreglo nuevo. No modifica los arreglos originales, sino que crea uno nuevo con todos los elementos de los arreglos originales concatenados en el orden en que se pasaron como argumentos.
+
+## Ejemplo📝
+
+```dummy
+// Crear dos arreglos de ejemplo
+var arreglo1 = [1, 2, 3];
+var arreglo2 = [4, 5, 6];
+
+// Concatenar los dos arreglos en uno nuevo
+var arregloConcatenado = arreglo1.concatenar(arreglo2);
+imprimir(arregloConcatenado);
+```
+Salida:
+
+```dummy
+// [1, 2, 3, 4, 5, 6]
+```

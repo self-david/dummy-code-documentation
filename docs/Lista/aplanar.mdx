@@ -1,0 +1,55 @@
+---
+sidebar_position: 7
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# aplanar
+Se utiliza para "aplanar" un arreglo (también conocido como lista) que contiene arreglos anidados, es decir, convertir una estructura de datos jerárquica en un arreglo plano. Este método crea un nuevo arreglo con todos los elementos de los arreglos anidados colocados en un solo nivel de profundidad. No modifica el arreglo original.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo con arreglos anidados
+var arregloAnidado = [1, [2, 3], [4, 5]];
+
+// Aplanar el arreglo
+var arregloAplanado = arregloAnidado.aplanar();
+imprimir(arregloAplanado);
+```
+Salida:
+
+```dummy
+//[1, 2, 3, 4, 5]
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+// Crear un arreglo de ejemplo con arreglos anidados de diferentes profundidades
+var arregloAnidadoProfundo = [1, [2, [3, 4]], [5, 6]];
+
+// Aplanar el arreglo hasta una profundidad máxima de 1
+var arregloAplanadoProfundo = arregloAnidadoProfundo.aplanar(1);
+imprimir(arregloAplanadoProfundo);
+```
+Salida:
+```dummy
+//[1, 2, [3, 4], 5, 6]
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

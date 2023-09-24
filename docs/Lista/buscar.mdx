@@ -1,0 +1,34 @@
+---
+sidebar_position: 5
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# buscar
+Busca el primer elemento que cumple con la condición o error si ningún elemento cumple con la condición. No modifica el arreglo original y toma como argumento una función que define la condición de búsqueda.
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo
+var personas = [
+  { nombre: 'Juan', edad: 25 },
+  { nombre: 'María', edad: 30 },
+  { nombre: 'Pedro', edad: 22 },
+  { nombre: 'Ana', edad: 35 }
+];
+
+// Buscar la primera persona que tenga más de 30 años
+var personaMayor = personas.buscar(funcion(persona) {
+  retorna persona.edad > 30;
+});
+
+imprimir(personaMayor);
+```
+Salida:
+
+```dummy
+// { nombre: 'María', edad: 30 }
+```
