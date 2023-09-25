@@ -8,32 +8,52 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Niveles de Dificultad Graduales',
+    imageUrl: 'img/levels.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Aprende a programar a tu propio ritmo con tres niveles de dificultad: fácil, normal y difícil.
+        Comienza desde lo básico y avanza gradualmente a desafíos más avanzados mientras te sientes cómodo y confiado.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Escritura de Código Coherente',
+    imageUrl: 'img/code.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Fomentamos buenas prácticas desde el principio. Aprenderás a escribir código limpio y legible,
+        una habilidad esencial para trabajar en proyectos de programación en la vida real.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Detección y Corrección de Errores',
+    imageUrl: 'img/errors.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Nuestra plataforma no solo te ayuda a detectar errores de sintaxis, sino que también te guía para resolver problemas de lógica.
+        Aprende a depurar tu código y mejorar tus habilidades de resolución de problemas.
+      </>
+    ),
+  },
+  {
+    title: 'Retroalimentación Personalizada',
+    imageUrl: 'img/feedback.svg',
+    description: (
+      <>
+        Recibe retroalimentación específica sobre tus errores y mejoras.
+        Nuestra plataforma te muestra dónde cometiste errores y cómo corregirlos para un aprendizaje más efectivo.
+      </>
+    ),
+  },
+  {
+    title: 'Preparación para el Mundo Real',
+    imageUrl: 'img/work.svg',
+    description: (
+      <>
+        Dummy code no solo se trata de teoría; te preparamos para el mundo laboral.
+        Aprende habilidades y prácticas utilizadas por desarrolladores profesionales.
       </>
     ),
   },
@@ -71,8 +91,8 @@ export default function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
-              Get Started
+              to={useBaseUrl('methods/')}>
+                Conoce más
             </Link>
           </div>
         </div>
@@ -83,12 +103,7 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 {features.map(({title, imageUrl, description}) => (
-                  <Feature
-                    key={title}
-                    title={title}
-                    imageUrl={imageUrl}
-                    description={description}
-                  />
+                  <Feature key={title} title={title} imageUrl={imageUrl} description={description} />
                 ))}
               </div>
             </div>

@@ -3,8 +3,8 @@ const theme = require('./src/theme/theme');
 /** @returns {Promise<import('@docusaurus/types').Config>} */
 module.exports = async function createConfigAsync() {
   return {
-    title: 'Dummy code',
-    tagline: 'Ahora puedes programar en español',
+    title: 'Bienvenido a Dummy code',
+    tagline: 'Explora la plataforma de aprendizaje de programación en español que te lleva desde principiante y da el primer paso hacia una emocionante carrera en desarrollo de software. ¡Comienza tu viaje hoy mismo con Dummy code!',
     organizationName: 'self-david',
     projectName: 'dummy-code-documentation',
     baseUrl: '/',
@@ -90,7 +90,7 @@ module.exports = async function createConfigAsync() {
     themeConfig:
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/logo2.svg',
       navbar: {
         title: 'Dummy Code',
         logo: {
@@ -165,7 +165,7 @@ module.exports = async function createConfigAsync() {
           alt: 'Dummy code Logo',
           // This default includes a positive & negative version, allowing for
           // appropriate use depending on your site's style.
-          src: '/img/meta_opensource_logo_negative.svg',
+          src: '/img/logo2.svg',
           href: 'https://dummycode.qahub.dev',
         },
         copyright: 'Copyright © 2023 Dummy code.',
