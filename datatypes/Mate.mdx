@@ -1,0 +1,30 @@
+---
+sidebar_position: 7
+---
+
+# Mate
+Proporciona una serie de propiedades y métodos para realizar operaciones matemáticas en números. Aunque no es un "tipo de dato" en sí mismo, es una parte fundamental cuando se necesitan operaciones matemáticas avanzadas. 
+
+Aquí tienes algunas características clave del objeto Math:
+
+## Funciones Matemáticas: 
+Math incluye una serie de funciones matemáticas comunes, como Mate.seno, Mate.raiz(), Mate.potencia(), Mate.truncar(), Mate.redondeo(), Mate.redondeoCercano(), entre otras.
+
+## Generación de Números Aleatorios: 
+Puedes utilizar Mate.aleatorio() para generar números aleatorios en el rango entre 0 (inclusive) y 1 (exclusivo). También puedes combinar esto con otras funciones para obtener números aleatorios en un rango específico.
+
+## Ejemplo📝
+
+```dummy
+var numeroAleatorio = Mate.aleatorio(); // Generar un número aleatorio entre 0 y 1
+imprimir("Número aleatorio: " + numeroAleatorio);
+
+var numeroAleatorioEnRango = Mate.truncar(Mate.aleatorio() * 10) + 1; // Generar un número aleatorio entre 1 y 10
+imprimir("Número aleatorio en rango: " + numeroAleatorioEnRango);
+```
+Salida:
+
+```dummy
+// 0.25
+// 4
+```

@@ -35,6 +35,20 @@ module.exports = async function createConfigAsync() {
           // showLastUpdateTime: true,
         }),
       ],
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'datatypes',
+          path: 'datatypes',
+          routeBasePath: 'datatypes',
+          // remarkPlugins: [npm2yarn],
+          editCurrentVersion: false,
+          sidebarPath: require.resolve('./sidebars.js'),
+          // showLastUpdateAuthor: true,
+          // showLastUpdateTime: true,
+        }),
+      ]
     ],
     presets: [
       [
@@ -96,6 +110,12 @@ module.exports = async function createConfigAsync() {
             position: 'left',
             activeBaseRegex: `/errors/`,
             // sidebarId: 'tutorialSidebar',
+          }, {
+            to: '/datatypes',
+            label: 'Tipos de dato',
+            position: 'left',
+            activeBaseRegex: `/datatypes/`,
+            // sidebarId: 'tutorialSidebar',
           },
           {to: 'blog', label: 'blog', position: 'left'},
           // Please keep GitHub link to the right for consistency.
@@ -119,6 +139,10 @@ module.exports = async function createConfigAsync() {
               {
                 label: 'Errores',
                 to: 'errors/',
+              }, 
+              {
+                label: 'Tipos de dato',
+                to: 'datatypes/',
               },
             ],
           },
