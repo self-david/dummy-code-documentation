@@ -1,0 +1,79 @@
+---
+sidebar_position: 10
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# regresar
+se utiliza en muchas funciones en programación para devolver un valor desde la función al lugar donde se llamó.
+
+En dummycode tenemos tres maneras diferentes para esta palabra reservada
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+funcion suma(a, b) {
+  var resultado = a + b;
+  regresar resultado;
+}
+
+var resultadoSuma = suma(5, 3);
+imprimir("El resultado de la suma es: " + resultadoSuma);
+
+```
+Salida:
+
+```dummy
+//El resultado de la suma es: 8
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+funcion suma(a, b) {
+  var resultado = a + b;
+  retornar resultado;
+}
+
+var resultadoSuma = suma(5, 3);
+imprimir("El resultado de la suma es: " + resultadoSuma);
+
+```
+Salida:
+```dummy
+//El resultado de la suma es: 8
+```
+```mdx-code-block
+</TabItem>
+<TabItem value="var3" label="Variante 3">
+```
+```dummy
+funcion suma(a, b) {
+  var resultado = a + b;
+  ret resultado;
+}
+
+var resultadoSuma = suma(5, 3);
+imprimir("El resultado de la suma es: " + resultadoSuma);
+
+```
+Salida:
+```dummy
+//El resultado de la suma es: 8
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

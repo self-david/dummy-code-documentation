@@ -48,7 +48,29 @@ module.exports = async function createConfigAsync() {
           // showLastUpdateAuthor: true,
           // showLastUpdateTime: true,
         }),
-      ]
+      ],
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'ReservPa',
+          path: 'ReservPa',
+          routeBasePath: 'ReservPa',
+          editCurrentVersion: false,
+          sidebarPath: require.resolve('./sidebars.js'),
+        })
+      ],
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'estruct',
+          path: 'estruct',
+          routeBasePath: 'estruct',
+          editCurrentVersion: false,
+          sidebarPath: require.resolve('./sidebars.js'),
+        })
+      ],
     ],
     presets: [
       [
@@ -110,12 +132,25 @@ module.exports = async function createConfigAsync() {
             position: 'left',
             activeBaseRegex: `/errors/`,
             // sidebarId: 'tutorialSidebar',
-          }, {
+          }, 
+          {
             to: '/datatypes',
             label: 'Tipos de dato',
             position: 'left',
             activeBaseRegex: `/datatypes/`,
             // sidebarId: 'tutorialSidebar',
+          }, 
+          {
+            to: '/ReservPa',
+            label: 'Palabras reservadas',
+            position: 'left',
+            activeBaseRegex: '/ReservPa/'
+          },
+          {
+            to: '/estruct',
+            label: 'Esctructuras de control',
+            position: 'left',
+            activeBaseRegex: '/estruct/'
           },
           {to: 'blog', label: 'blog', position: 'left'},
           // Please keep GitHub link to the right for consistency.
@@ -144,6 +179,14 @@ module.exports = async function createConfigAsync() {
                 label: 'Tipos de dato',
                 to: 'datatypes/',
               },
+              {
+                label: 'Palabras reservadas',
+                to: 'ReservPa'
+              },
+              {
+                label: 'Estructuras de control',
+                to: 'estruct'
+              }
             ],
           },
           {

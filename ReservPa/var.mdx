@@ -1,0 +1,39 @@
+---
+sidebar_position: 4
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# var
+Permite declarar variables que solo son accesibles dentro del bloque en el que se definen, lo que mejora la encapsulación y evita problemas relacionados con el alcance.
+
+## Ejemplo📝
+
+```dummy
+global x = 10; // Declaración de una variable global
+
+funcion ejemploVar() {
+  var edad = 30; // Declaración de una variable local con "var"
+  var z = 20;   // Declaración de una variable con "var"
+
+  imprimir("Edad dentro de la función: " + edad);
+
+  si (x < z) {
+    var mensaje = "x es menor que z."; // Declaración de una variable local con "var"
+    imprimir(mensaje);
+  } osi (x >= z && verdadero) {
+    var mensaje = "x es mayor o igual que z y es verdadero."; // Reasignación de la variable "mensaje" con "var"
+    imprimir(mensaje);
+  } sino {
+    var mensaje = "x es mayor o igual que z pero no es verdadero."; // Reasignación de la variable "mensaje" con "var"
+    imprimir(mensaje);
+  }
+```
+Salida:
+
+```dummy
+// 30
+//x es mayor o igual que z y es verdadero.
+```

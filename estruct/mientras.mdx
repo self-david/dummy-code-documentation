@@ -1,0 +1,31 @@
+---
+sidebar_position: 4
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# mientras
+La estructura "mientras" se utiliza para repetir una acción o bloque de código una y otra vez mientras una condición sea [cierta|verdadera]. Primero, se verifica si la condición es [cierta|verdadera]. Si es [cierta|verdadera], se ejecuta el bloque de código. Luego, la condición se vuelve a verificar. Si todavía es [cierta|verdadera], se repite el bloque de código. Este proceso continúa hasta que la condición se vuelva falsa, momento en el cual el bucle se detiene y el programa continúa con la ejecución normal.
+
+## Ejemplo📝
+
+```dummy
+var contador = 1;
+
+mientras (contador <= 5) {
+  imprimir("Número: " + contador);
+  contador++;
+}
+```
+Salida:
+
+```dummy
+//Numero: 1
+//Numero: 2
+//Numero: 3
+//Numero: 4
+//Numero: 5
+```
+

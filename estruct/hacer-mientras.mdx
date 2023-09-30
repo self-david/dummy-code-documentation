@@ -1,0 +1,38 @@
+---
+sidebar_position: 3
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# hacer-mientras
+Se utiliza para ejecutar un bloque de código al menos una vez y luego repetirlo mientras se cumpla una condición.
+
+## Ejemplo📝
+
+```dummy
+funcion contarHastaCinco() {
+  imprimir("Contando hasta cinco:");
+
+  var contador = 1;
+
+  hacer {
+    imprimir("Número: " + contador);
+    contador++;
+  } mientras (contador <= 5);
+}
+
+contarHastaCinco();
+```
+Salida:
+
+```dummy
+//Contando hasta cinco:
+//Número: 1
+//Número: 2
+//Número: 3
+//Número: 4
+//Número: 5
+```
+La estructura "elegir" y "caso" es útil cuando se necesita realizar diferentes acciones basadas en un valor específico y es una alternativa más limpia y eficiente que usar múltiples declaraciones "si"  y "sino si" cuando se tienen muchas opciones.

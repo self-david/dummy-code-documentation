@@ -1,0 +1,37 @@
+---
+sidebar_position: 6
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# continuar
+Se utiliza en muchas estructuras de control de bucles para omitir la ejecución del código restante en una iteración actual y pasar a la siguiente iteración.
+
+## Ejemplo📝
+
+```dummy
+funcion ejemploContinuarPara() {
+  imprimir("Ejemplo de continuar en un bucle para en dummycode:");
+
+  para (var i = 0; i < 5; i++) {
+    si (i === 2) {
+      // Si i es igual a 2, se omite esta iteración y se pasa a la siguiente.
+      continuar;
+    }
+    imprimir("Valor de i: " + i);
+  }
+}
+
+ejemploContinueFor();
+```
+Salida:
+
+```dummy
+// Ejemplo de continuar en un bucle for en dummycode:
+// Valor de i: 0
+// Valor de i: 1
+// Valor de i: 3
+// Valor de i: 4
+```

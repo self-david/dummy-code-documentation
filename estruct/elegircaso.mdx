@@ -1,0 +1,41 @@
+---
+sidebar_position: 2
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# elegir-caso
+se utiliza para realizar selecciones múltiples basadas en el valor de una expresión. 
+
+## Ejemplo📝
+
+```dummy
+funcion seleccionarBebida(opcion) {
+  imprimir("Usted ha seleccionado la opción " + opcion + ".");
+  
+  elegir (opcion) {
+    caso "1":
+      imprimir("Ha seleccionado agua.");
+      terminar;
+    caso "2":
+      imprimir("Ha seleccionado refresco.");
+      terminar;
+    caso "3":
+      imprimir("Ha seleccionado jugo de naranja.");
+      terminar;
+    caso "4":
+      imprimir("Ha seleccionado café.");
+      terminar;
+    predeterminado:
+      imprimir("Opción no válida. Por favor, seleccione una bebida válida.");
+  }
+}
+
+// Llamar a la función para seleccionar la bebida
+seleccionarBebida(opcionSeleccionada);
+```
+
+Este ejemplo ilustra cómo la estructura "elegir - caso" puede ser útil para tomar decisiones basadas en múltiples opciones y proporcionar una respuesta específica en función de la elección del usuario.
+

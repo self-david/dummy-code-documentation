@@ -1,0 +1,37 @@
+---
+sidebar_position: 11
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# eliminar
+se utiliza para eliminar una propiedad de un objeto o un elemento de un arreglo.
+
+## Ejemplo📝
+
+```dummy
+// Definición de un objeto
+var persona = {
+  nombre: "Juan",
+  edad: 30,
+  ocupacion: "Desarrollador"
+};
+
+// Eliminación de la propiedad "ocupacion" utilizando "eliminar"
+eliminar persona.ocupacion;
+
+// Comprobación de si la propiedad fue eliminada
+si (!("ocupacion" en persona)) {
+  imprimir("La propiedad 'ocupacion' fue eliminada con éxito.");
+} sino {
+  imprimir("La propiedad 'ocupacion' no fue eliminada.");
+}
+```
+Salida:
+
+```dummy
+//La propiedad 'ocupacion' fue eliminada con éxito.
+```
+

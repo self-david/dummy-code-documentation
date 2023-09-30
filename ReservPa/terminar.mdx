@@ -1,0 +1,44 @@
+---
+sidebar_position: 7
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# terminar
+se utiliza en bucles para salir inmediatamente del bucle y continuar con la ejecución del código después del bucle.
+
+## Ejemplo📝
+
+
+```dummy
+funcion ejemploTerminarEnHacerMientras() {
+  imprimir("Ejemplo de terminar en un bucle hacer mientras en dummycode:");
+
+  var i = 0;
+  hacer {
+    si (i === 4) {
+      imprimir("Se encontró el valor 4. Terminando el bucle.");
+      terminar;
+    }
+    imprimir("Valor de i: " + i);
+    i++;
+  } mientras (i < 5);
+
+  imprimir("El bucle hacer mientras ha terminado.");
+}
+
+ejemploTerminarEnHacerMientras();
+```
+Salida:
+
+```dummy
+//Ejemplo de terminar en un bucle 'hacer mientras' en dummycode:
+//Valor de i: 0
+//Valor de i: 1
+//Valor de i: 2
+//Valor de i: 3
+//Se encontró el valor 4. Terminando el bucle.
+//El bucle hacer mientras ha terminado.
+```
