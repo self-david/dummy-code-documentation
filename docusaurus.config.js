@@ -4,7 +4,7 @@ const theme = require('./src/theme/theme');
 module.exports = async function createConfigAsync() {
   return {
     title: 'Bienvenido a Dummy code',
-    tagline: 'Explora la plataforma de aprendizaje de programación en español que te lleva desde principiante y da el primer paso hacia una emocionante carrera en desarrollo de software. ¡Comienza tu viaje hoy mismo con Dummy code!',
+    tagline: 'Explora la plataforma de aprendizaje de programación en español que te lleva lleva de la mano desde principiante y da el primer paso hacia una emocionante carrera. ¡Comienza tu viaje hoy mismo con Dummy code!',
     organizationName: 'self-david',
     projectName: 'dummy-code-documentation',
     baseUrl: '/',

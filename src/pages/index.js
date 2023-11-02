@@ -12,8 +12,8 @@ const features = [
     imageUrl: 'img/levels.svg',
     description: (
       <>
-        Aprende a programar a tu propio ritmo con tres niveles de dificultad: fácil, normal y difícil.
-        Comienza desde lo básico y avanza gradualmente a desafíos más avanzados mientras te sientes cómodo y confiado.
+        Aprende a programar a tu propio ritmo con tres niveles: fácil, normal y difícil.
+        Comienza desde lo básico y avanza a desafíos más avanzados a medida que te sientas cómodo y confiado.
       </>
     ),
   },
@@ -52,8 +52,7 @@ const features = [
     imageUrl: 'img/work.svg',
     description: (
       <>
-        Dummy code no solo se trata de teoría; te preparamos para el mundo laboral.
-        Aprende habilidades y prácticas utilizadas por desarrolladores profesionales.
+      El código de práctica no se limita a la teoría, te prepara para desafíos del mundo real. Adquiere habilidades y técnicas utilizadas por expertos en desarrollo.
       </>
     ),
   },
