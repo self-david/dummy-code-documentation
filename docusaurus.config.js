@@ -4,7 +4,7 @@ const theme = require('./src/theme/theme');
 module.exports = async function createConfigAsync() {
   return {
     title: 'Bienvenido a Dummy code',
-    tagline: 'Explora la plataforma de aprendizaje de programación en español que te lleva desde principiante y da el primer paso hacia una emocionante carrera en desarrollo de software. ¡Comienza tu viaje hoy mismo con Dummy code!',
+    tagline: 'Explora la plataforma de aprendizaje de programación en español que te lleva lleva de la mano desde principiante y da el primer paso hacia una emocionante carrera. ¡Comienza tu viaje hoy mismo con Dummy code!',
     organizationName: 'self-david',
     projectName: 'dummy-code-documentation',
     baseUrl: '/',
@@ -34,6 +34,42 @@ module.exports = async function createConfigAsync() {
           // showLastUpdateAuthor: true,
           // showLastUpdateTime: true,
         }),
+      ],
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'datatypes',
+          path: 'datatypes',
+          routeBasePath: 'datatypes',
+          // remarkPlugins: [npm2yarn],
+          editCurrentVersion: false,
+          sidebarPath: require.resolve('./sidebars.js'),
+          // showLastUpdateAuthor: true,
+          // showLastUpdateTime: true,
+        }),
+      ],
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'reservedWords',
+          path: 'reservedWords',
+          routeBasePath: 'reservedWords',
+          editCurrentVersion: false,
+          sidebarPath: require.resolve('./sidebars.js'),
+        })
+      ],
+      [
+        'content-docs',
+        /** @type {import('@docusaurus/plugin-content-docs').Options} */
+        ({
+          id: 'estruct',
+          path: 'estruct',
+          routeBasePath: 'estruct',
+          editCurrentVersion: false,
+          sidebarPath: require.resolve('./sidebars.js'),
+        })
       ],
     ],
     presets: [
@@ -96,8 +132,27 @@ module.exports = async function createConfigAsync() {
             position: 'left',
             activeBaseRegex: `/errors/`,
             // sidebarId: 'tutorialSidebar',
+          }, 
+          {
+            to: '/datatypes',
+            label: 'Tipos de dato',
+            position: 'left',
+            activeBaseRegex: `/datatypes/`,
+            // sidebarId: 'tutorialSidebar',
+          }, 
+          {
+            to: '/reservedWords',
+            label: 'Palabras reservadas',
+            position: 'left',
+            activeBaseRegex: '/reservedWords/'
           },
-          {to: 'blog', label: 'blog', position: 'left'},
+          {
+            to: '/estruct',
+            label: 'Esctructuras de control',
+            position: 'left',
+            activeBaseRegex: '/estruct/'
+          },
+          // {to: 'blog', label: 'blog', position: 'left'}, // hidden
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://github.com/self-david/dummy-code-documentation',
@@ -120,6 +175,18 @@ module.exports = async function createConfigAsync() {
                 label: 'Errores',
                 to: 'errors/',
               },
+              {
+                label: 'Tipos de dato',
+                to: 'datatypes/',
+              },
+              {
+                label: 'Palabras reservadas',
+                to: 'reservedWords/'
+              },
+              {
+                label: 'Estructuras de control',
+                to: 'estruct/'
+              }
             ],
           },
           {

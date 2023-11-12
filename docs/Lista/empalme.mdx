@@ -1,0 +1,66 @@
+---
+sidebar_position: 20
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# empalme
+Se utiliza para modificar un arreglo (también conocido como lista) al agregar, eliminar o reemplazar elementos en una posición específica del arreglo. Este método puede tomar varios argumentos y permite una amplia variedad de operaciones en el arreglo original.
+
+Toma al menos tres argumentos:
+
+Índice: La posición en la que deseas realizar la operación en el arreglo.
+
+Número de elementos a eliminar: La cantidad de elementos que deseas eliminar a partir del índice especificado.
+
+Elementos para agregar (opcional): Los elementos que deseas agregar en lugar de los que se eliminaron.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja', 'uva'];
+
+// Eliminar 'naranja' del arreglo
+var eliminado = frutas.empalme(2, 1);
+
+imprimir(eliminados);
+```
+Salida:
+
+```dummy
+// ['naranja']
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja', 'uva'];
+
+// Agregar 'sandía' y 'mango' en la posición 2
+var agregado = frutas.empalme(2, 0, 'sandía', 'mango');
+
+imprimir(agregado);
+```
+Salida:
+```dummy
+// ['manzana', 'pera', 'sandía', 'mango', 'uva']
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+Es un metodo muy versátil y permite realizar varias operaciones en un arreglo. Puedes eliminar elementos, agregar nuevos elementos o reemplazar elementos existentes.

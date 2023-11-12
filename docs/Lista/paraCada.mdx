@@ -1,0 +1,34 @@
+---
+sidebar_position: 8
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# paraCada
+Se utiliza para recorrer (o iterar) un arreglo (también conocido como lista) y ejecutar una función proporcionada una vez por cada elemento en el arreglo.
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo
+var numeros = [1, 2, 3, 4, 5];
+
+// Utilizar forEach para imprimir cada número en la consola
+numeros.paraCada(funcion(numero) {
+    imprimir(numero);
+});
+
+// Esto imprimirá cada número del arreglo en la consola
+```
+Salida:
+
+```dummy
+// 1
+// 2
+// 3
+// 4
+// 5
+```
+Este método no crea un nuevo arreglo ni modifica el arreglo original, simplemente permite realizar una acción en cada elemento.

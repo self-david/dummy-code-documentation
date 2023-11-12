@@ -1,0 +1,60 @@
+---
+sidebar_position: 19
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# ordenar
+Se utiliza para ordenar los elementos de un arreglo (también conocido como lista) de manera predeterminada o aplicando una función de comparación personalizada.
+Cuando se usa sin argumentos, ordena los elementos como cadenas de texto en orden alfabético o, si son números, en orden numérico. Por defecto, ordena en orden ascendente (de menor a mayor) para cadenas y números.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo con nombres de frutas
+var frutas = ['manzana', 'pera', 'naranja', 'uva'];
+
+// Ordenar las frutas alfabéticamente usando ordenar
+var ordenadas = frutas.ordenar();
+
+imprimir(ordenadas);
+```
+Salida:
+
+```dummy
+// ['manzana', 'naranja', 'pera', 'uva']
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+También puedes proporcionar una función de comparación personalizada para ordenar() si deseas un ordenamiento diferente
+```dummy
+// Crear un arreglo de ejemplo con números
+var numeros = [5, 2, 8, 1, 9];
+
+// Ordenar los números en orden descendente usando ordenar y una función de comparación personalizada
+numeros.ordenar(funcion(a, b) {
+  imprimir (b - a);
+});
+
+```
+Salida:
+```dummy
+// [9, 8, 5, 2, 1]
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

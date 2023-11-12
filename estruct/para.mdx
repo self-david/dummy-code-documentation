@@ -1,0 +1,42 @@
+---
+sidebar_position: 5
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# para
+Se utiliza para ejecutar un bloque de código varias veces con un control preciso sobre el número de iteraciones
+
+Iniciar Contador: Imagina que tienes una cuenta desde un número específico. Esto es como decirle a la máquina desde qué número empezar a contar. Por ejemplo, "Empieza a contar desde 1".
+
+Condición de Parada: Luego, le dices a la máquina cuándo debe dejar de contar. Esto es como decirle, "Continúa contando mientras no llegues a un número específico".
+
+Contar y Actualizar: Cada vez que cuentas uno, marcas un número más en tu lista. Esto es como decirle a la máquina, "Suma uno al número actual cada vez que cuentes"
+
+## Ejemplo📝
+
+```dummy
+global contador = 1; // Empezamos a contar desde 1
+
+funcion ejemploPara() {
+  imprimir("Ejemplo de estructura para en dummycode:");
+
+  para (var i = 1; i <= 5; i++) {
+    imprimir("Número: " + i); // Mostramos el número actual
+  }
+}
+
+ejemploPara();
+```
+Salida:
+
+```dummy
+// Numero: 1
+// Numero: 2
+// Numero: 3
+// Numero: 4
+// Numero: 5
+```
+

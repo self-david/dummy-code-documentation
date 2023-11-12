@@ -1,0 +1,87 @@
+---
+sidebar_position: 6
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# si-osi-sino
+
+# si
+se utiliza para tomar decisiones basadas en condiciones. Consiste en una condición que se evalúa como verdadera o falsa y un bloque de código que se ejecuta si la condición es verdadera.
+
+Se evalúa una expresión o condición en el if.
+Si la condición es verdadera, el código dentro del bloque if se ejecuta.
+Si la condición es falsa, el código dentro del bloque if se omite o no se ejecuta.
+
+## Ejemplo📝
+
+```dummy
+var edad = 18;
+
+si (edad >= 18) {
+  imprimir("Eres mayor de edad.");
+} sino {
+  imprimir("Eres menor de edad.");
+}
+
+```
+Salida:
+
+```dummy
+// Eres mayor de edad.
+```
+# osi
+Se utiliza para manejar múltiples condiciones de manera escalonada o secuencial después de un bloque if. Permite evaluar diferentes condiciones y ejecutar un bloque de código correspondiente al primer else if que sea verdadero. 
+
+Se evalúa la condición del if.
+Si la condición del if es verdadera, se ejecuta su bloque de código y el resto del else if se ignora.
+Si la condición del if es falsa, se pasa a la siguiente condición else if.
+Se evalúa la primera condición else if. Si es verdadera, se ejecuta su bloque de código y se omite el resto de los else if.
+Este proceso continúa hasta que se encuentre una condición verdadera o hasta que se alcance el else final.
+
+## Ejemplo📝
+
+```dummy
+var puntaje = 85;
+
+si (puntaje >= 90) {
+  imprimir("Aprobado con A");
+} osi (puntaje >= 80) {
+  imprimir("Aprobado con B");
+} osi (puntaje >= 70) {
+  imprimir("Aprobado con C");
+} sino {
+  imprimir("Reprobado");
+}
+```
+Salida:
+
+```dummy
+// Aprobado con B
+```
+# sino
+se utiliza en combinación con la estructura if para manejar un caso por defecto o una alternativa cuando la condición del if es falsa. 
+
+Se evalúa la condición en el if.
+Si la condición del if es verdadera, se ejecuta el bloque de código dentro del if.
+Si la condición del if es falsa, se ejecuta el bloque de código dentro del else.
+
+## Ejemplo📝
+
+```dummy
+var edad = 16;
+
+si (edad >= 18) {
+  imprimir("Eres mayor de edad.");
+} sino {
+  imprimir("Eres menor de edad.");
+}
+
+```
+Salida:
+
+```dummy
+// Eres menor de edad.
+```

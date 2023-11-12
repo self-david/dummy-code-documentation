@@ -1,0 +1,34 @@
+---
+sidebar_position: 6
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# buscarIndice
+
+Retorna el índice del primer elemento que cumple con la condición o -1 si ningún elemento cumple con la condición. No modifica el arreglo original y toma como argumento una función que define la condición de búsqueda.
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo
+var personas = [
+  { nombre: 'Juan', edad: 25 },
+  { nombre: 'María', edad: 30 },
+  { nombre: 'Pedro', edad: 22 },
+  { nombre: 'Ana', edad: 35 }
+];
+
+// Encontrar el índice de la primera persona que tenga más de 30 años
+var indicePersonaMayor = personas.buscarIndice(funcion(persona) {
+  imprimir (persona.edad > 30);
+});
+imprimir(indicePersonaMayor);
+```
+Salida:
+
+```dummy
+// { nombre: 'María', edad: 30 }
+```

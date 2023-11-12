@@ -1,0 +1,28 @@
+---
+sidebar_position: 13
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# mapear
+Se utiliza para crear un nuevo arreglo (también conocido como lista) a partir de otro arreglo existente, aplicando una función proporcionada a cada elemento del arreglo original. Esta función recibe un elemento como argumento y retorna un nuevo valor, y el método mapear crea un nuevo arreglo con los valores retornados por la función para cada elemento del arreglo original. 
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo
+var numeros = [1, 2, 3, 4, 5];
+
+// Duplicar cada número del arreglo usando mapear
+var numerosDuplicados = numeros.mapear(funcion(numero) {
+  imprimir (numero * 2);
+});
+
+```
+Salida:
+
+```dummy
+// [2, 4, 6, 8, 10]
+```

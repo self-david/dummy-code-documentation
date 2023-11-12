@@ -1,0 +1,107 @@
+---
+sidebar_position: 1
+---
+
+# Tipos de datos
+
+Los tipos de datos son una parte fundamental de cualquier lenguaje de programación, ya que determinan qué tipo de valores pueden ser almacenados en una variable o utilizado en una operación. Los tipos de datos definen cómo se almacena y se manipula la información en un programa. De este mismo modo dummy code utiliza una serie de tipos de datos los cuales son:
+
+## Texto
+Se utiliza para representar texto, como palabras, frases o caracteres.
+```dummy
+nombre = "nuevo usuario"
+imprimir("Hola, " + nombre)
+```
+Salida:
+
+```dummy
+// Hola nuevo usuario
+```
+## Lista
+Permite almacenar una colección ordenada de valores, que pueden ser de cualquier tipo. Los elementos en un arreglo se acceden mediante un índice numérico.
+```dummy
+numeros = [1, 2, 3, 4, 5]
+imprimir(numeros[2])
+```
+Salida:
+
+```dummy
+// 3
+```
+## Número 
+Representa valores numéricos, ya sean enteros o de punto flotante.
+```dummy
+const numero1 = 5;
+const numero2 = 10;
+const suma = numero1 + numero2;
+
+imprimir("La suma de", numero1, "y", numero2, "es igual a", suma);
+```
+Salida:
+
+```dummy
+// 15
+```
+## Logico
+Solo puede tener dos valores: verdadero o falso. Se utiliza para representar valores de verdad en la lógica de programación y en las decisiones.
+
+```dummy
+var activo = verdadero
+
+si (activo) {
+    imprimir("El sistema está activo")
+} sino {
+    imprimir("El sistema está inactivo")
+}
+```
+Salida:
+
+```dummy
+// El sistema está activo
+```
+## Fecha
+Se utiliza para representar fechas y horas. Permite trabajar con información relacionada al tiempo, como fechas de calendario y marcas de tiempo.
+```dummy
+var fechaActual = crear Fecha();
+
+var diaDelMes = fechaActual.dia();
+
+imprimir("Día del mes:", diaDelMes);
+```
+Salida:
+
+```dummy
+//Día del mes: 17
+```
+## Mate
+No es un tipo de dato en sí, sino un objeto o módulo que proporciona funciones y constantes matemáticas en muchos lenguajes de programación. Se utiliza para realizar operaciones matemáticas avanzadas, como cálculos trigonométricos o exponenciación.
+```dummy
+var anguloEnRadianes = 0.5; // aproximadamente 30 grados en radianes
+
+var senoDelAngulo = Mate.sen(anguloEnRadianes);
+
+imprimir("El seno de " + anguloEnRadianes + " radianes es: " + senoDelAngulo);
+```
+Salida:
+
+```dummy
+// El seno de 0.5 radianes es: 0.479425538604203
+```
+## Objeto
+Se utiliza para crear estructuras de datos complejas que pueden contener múltiples valores de diferentes tipos. Los objetos se componen de propiedades (claves) y valores asociados.
+```dummy
+var objetoPrototipo = { a: 1, b: 2 };
+
+var nuevoObjeto = Objeto.crear(objetoPrototipo);
+
+imprimir("Nuevo objeto:", nuevoObjeto);
+imprimir("Propiedad 'a' en el nuevo objeto:", nuevoObjeto.a);
+imprimir("Propiedad 'b' en el nuevo objeto:", nuevoObjeto.b);
+```
+Salida:
+
+```dummy
+// Nuevo objeto: {}
+// Propiedad 'a' en el nuevo objeto: 1
+// Propiedad 'b' en el nuevo objeto: 2
+```

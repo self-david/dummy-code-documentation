@@ -1,0 +1,72 @@
+---
+sidebar_position: 14
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# verdadero
+se utiliza para representar el valor booleano, verdadero indica que una afirmación o condición es verdadera.
+
+En dummycode tenemos dos maneras diferentes para esta palabra reservada
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+global esVerdadero = verdadero; // Declaración de una variable global con el valor booleano
+
+funcion ejemploVerdadero() {
+  imprimir("Ejemplo de verdadero en dummycode:");
+
+  si (esVerdadero === verdadero) {
+    imprimir("La afirmación es verdadera.");
+  } sino {
+    imprimir("La afirmación no es verdadera.");
+  }
+}
+
+ejemploVerdadero();
+```
+Salida:
+
+```dummy
+// Ejemplo de verdadero en dummycode:
+// La afirmación es verdadera.
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+global esVerdadero = cierto; // Declaración de una variable global con el valor booleano
+
+funcion ejemploVerdadero() {
+  imprimir("Ejemplo de cierto en dummycode:");
+
+  si (esVerdadero === cierto) {
+    imprimir("La afirmación es verdadera.");
+  } más {
+    imprimir("La afirmación no es verdadera.");
+  }
+}
+
+ejemploVerdadero();
+```
+Salida:
+```dummy
+// Ejemplo de cierto en dummycode:
+// La afirmación es verdadera.
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

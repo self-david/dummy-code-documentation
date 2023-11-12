@@ -1,0 +1,55 @@
+---
+sidebar_position: 21
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# aTexto
+Se utiliza para convertir un arreglo (también conocido como lista) en una cadena de texto. Este método retorna una cadena que contiene los elementos del arreglo separados por comas (,).
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja'];
+
+// Convertir el arreglo en una cadena usando aTexto
+var cadenaDeFrutas = frutas.aTexto();
+
+imprimir(cadenaDeFrutas);
+```
+Salida:
+
+```dummy
+// 'manzana,pera,naranja'
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+Puedes ver que los elementos del arreglo se separan por comas en la cadena resultante. Si deseas personalizar el separador, puedes usar el método unir() en su lugar.
+```dummy
+// Convertir el arreglo en una cadena usando join con un separador personalizado
+var cadenaPersonalizada = frutas.unir(' - ');
+
+imprimir(cadenaPersonalizada);
+```
+Salida:
+```dummy
+// 'manzana - pera - naranja'
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

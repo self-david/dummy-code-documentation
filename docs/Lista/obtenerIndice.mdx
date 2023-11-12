@@ -1,0 +1,54 @@
+---
+sidebar_position: 10
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# obtenerIndice
+
+Se utiliza para buscar la primera aparición de un elemento específico en un arreglo (también conocido como lista) y retornar el índice (la posición) de ese elemento. Si el elemento no se encuentra en el arreglo, retorna -1.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo
+var colores = ['rojo', 'verde', 'azul', 'amarillo', 'rojo'];
+
+// Encontrar el índice de la primera aparición de 'azul'
+var indiceAzul = colores.obtenerIndice('azul');
+imprimir(indiceAzul);
+```
+Salida:
+
+```dummy
+// 2
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+// Encontrar el índice de 'negro' en el arreglo
+var indiceNegro = colores.obtenerIndice('negro');
+imprimir(indiceNegro);
+
+```
+Salida:
+```dummy
+// -1
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

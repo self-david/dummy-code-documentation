@@ -1,0 +1,26 @@
+---
+sidebar_position: 3
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# global
+"global" puede ser utilizada para acceder a variables globales que han sido declaradas previamente fuera de cualquier función o ámbito local.
+
+## Ejemplo📝
+
+```dummy
+global x = 10; // Declaración de una variable global
+
+funcion ejemploGlobal() {
+  const PI = 3.1416; // Declaración de una constante con "const"
+  imprimir(PI*x)
+}
+```
+Salida:
+
+```dummy
+// 31.4159
+```

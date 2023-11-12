@@ -1,0 +1,58 @@
+---
+sidebar_position: 12
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# unir
+Se utiliza para unir todos los elementos de un arreglo (también conocido como lista) en una sola cadena de texto. Puedes especificar un separador opcional que se colocará entre los elementos en la cadena resultante.
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja'];
+
+// Unir los elementos del arreglo en una cadena con comas como separador
+var cadenaDeFrutas = frutas.unir(', ');
+
+imprimir(cadenaDeFrutas);
+```
+Salida:
+
+```dummy
+// 'manzana, pera, naranja'
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja'];
+
+// Unir los elementos del arreglo sin separador
+var cadenaSinSeparador = frutas.unir('');
+
+imprimir(cadenaSinSeparador);
+```
+Salida:
+```dummy
+// 'manzanaperanaranja'
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```
+Este método no modifica el arreglo original y retorna la cadena resultante.

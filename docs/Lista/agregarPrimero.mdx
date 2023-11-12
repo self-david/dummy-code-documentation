@@ -1,0 +1,62 @@
+---
+sidebar_position: 22
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# agregarPrimero
+Se utiliza para agregar uno o más elementos al principio de un arreglo (también conocido como lista).
+
+## Ejemplo📝
+
+```mdx-code-block
+<BrowserWindow title=''>
+<Tabs>
+<TabItem value="var1" label="Variante 1">
+```
+
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['naranja', 'pera', 'uva'];
+
+// Agregar una nueva fruta al principio del arreglo usando agregarPrimero
+var nuevaFruta = 'manzana';
+var nuevaLongitud = frutas.agregarPrimero(nuevaFruta);
+
+imprimir(nuevaLongitud);
+imprimir(frutas);
+```
+Salida:
+
+```dummy
+// 4
+// ['manzana', 'naranja', 'pera', 'uva']
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="var2" label="Variante 2">
+```
+Puedes usar agregarPrimero() para agregar múltiples elementos al principio del arreglo pasándolos como argumentos separados por comas:
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['naranja', 'pera', 'uva'];
+
+// Agregar múltiples frutas al principio del arreglo usando agregarPrimero
+var nuevasFrutas = ['mango', 'sandía'];
+var nuevaLista = frutas.agregarPrimero(nuevasFrutas);
+
+imprimir(nuevaLista);
+```
+Salida:
+```dummy
+// ['mango', 'sandía', 'manzana', 'naranja', 'pera', 'uva']
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+</BrowserWindow>
+```

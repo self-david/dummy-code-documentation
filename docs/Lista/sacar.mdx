@@ -1,0 +1,28 @@
+---
+sidebar_position: 14
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# sacar
+Este método modifica el arreglo original al eliminar el elemento, reduciendo la longitud del arreglo en 1.
+
+## Ejemplo📝
+
+```dummy
+// Crear un arreglo de ejemplo
+var frutas = ['manzana', 'pera', 'naranja'];
+
+// Eliminar el último elemento del arreglo usando sacar
+var ultimaFruta = frutas.sacar();
+
+imprimir(ultimaFruta);
+```
+Salida:
+
+```dummy
+// ['manzana', 'pera']
+```
+Es importante tener en cuenta que sacar() modifica el arreglo original al eliminar el elemento, por lo que debes usarlo con precaución si no deseas modificar el arreglo original.

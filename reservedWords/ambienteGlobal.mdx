@@ -1,0 +1,33 @@
+---
+sidebar_position: 18
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# ambienteGlobal
+"ambienteGlobal" hace referencia al objeto que contiene todas las variables y funciones globales accesibles desde cualquier parte del código. 
+
+## Ejemplo📝
+
+```dummy
+var objetoGlobal = ambienteGlobal; // Declaración de una variable que hace referencia al objeto global
+
+function ejemploAmbienteGlobal() {
+  imprimir("Ejemplo de 'ambienteGlobal' en dummycode");
+
+  // Acceso a una variable global utilizando "ambienteGlobal"
+  objetoGlobal.x = 10;
+
+  imprimir("Valor de x en el objeto global: " + objetoGlobal.x);
+}
+
+ejemploAmbienteGlobal();
+```
+Salida:
+
+```dummy
+// Ejemplo de 'globalThis' en dummycode:
+// Valor de x en el objeto global: 10
+```

@@ -1,0 +1,42 @@
+---
+sidebar_position: 8
+---
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# predeterminado
+se utiliza en la estructura de control "elegir - caso" como una opción por defecto cuando ninguna de las condiciones de los "caso" coincide con el valor de la expresión evaluada en el "elegir".
+
+## Ejemplo📝
+
+```dummy
+var opcion = "D"; // Declaración de una variable local
+
+funcion ejemploPredeterminado() {
+  imprimir("Ejemplo de 'predeterminado' en una estructura 'elegir - caso' en dummycode:");
+
+  elegir (opcion) {
+    caso "A":
+      imprimir("La opción es A.");
+      romper;
+    caso "B":
+      imprimir("La opción es B.");
+      romper;
+    caso "C":
+      imprimir("La opción es C.");
+      romper;
+    predeterminado:
+      imprimir("Opción no reconocida. Esta es la opción predeterminada.");
+  }
+}
+
+ejemploPredeterminado();
+```
+Salida:
+
+```dummy
+// Opción no reconocida. Esta es la opción predeterminada.
+```
+
