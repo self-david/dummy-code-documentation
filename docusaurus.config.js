@@ -152,7 +152,7 @@ module.exports = async function createConfigAsync() {
             position: 'left',
             activeBaseRegex: '/estruct/'
           },
-          {to: 'blog', label: 'blog', position: 'left'},
+          // {to: 'blog', label: 'blog', position: 'left'}, // hidden
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://github.com/self-david/dummy-code-documentation',
