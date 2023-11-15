@@ -2,14 +2,16 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 import supabase from '../../config/supabaseClient';
 import '../../css/recovery.css'
 
 export default function recovey() {
+  const isBrowser = useIsBrowser();
   const [code, setCode] = useState('')
   const [password, setPassword] = useState('')
 
-  const myURL = new URL(window.location.href);
+  const myURL = isBrowser ? new URL(window.location.href) : { search: '' };
   const params = new URLSearchParams(myURL.search);
   const email = params.get('email')
 
