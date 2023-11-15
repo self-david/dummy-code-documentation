@@ -1,3 +1,4 @@
+/* eslint-disable react/button-has-type */
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
