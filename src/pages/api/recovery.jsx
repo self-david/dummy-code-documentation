@@ -3,27 +3,48 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import supabase from '../../config/supabaseClient';
+import '../../css/recovery.css'
 
 export default function recovey() {
-  const [email, setEmail] = useState('')
+  const [code, setCode] = useState('')
   const [password, setPassword] = useState('')
 
-  const handleSubmit = async () => {
-    // const { data, error } = await supabase.auth.resetPasswordForEmail(email)
+  const myURL = new URL(window.location.href);
+  const params = new URLSearchParams(myURL.search);
+  const email = params.get('email')
 
-    const { data, error } = supabase.auth.updateUser({
-      email,
-      password
-    })
-    console.log({ data, error })
+
+  const handleSubmit = async () => {
+    if(!email) {
+      return alert('Debes acceder a este sitio desde la url que te enviamos por correo')
+    }
+    if(!code || !password) {
+      return alert('Todos los campos son obligatorios')
+    }
+
+    const { data, error } = await supabase.auth.verifyOtp({  email, token: code, type: 'email'})
+
+    if(error) {
+      return alert('El codigo es incorrecto, o ha expirado')
+    }
+
+    const { data: data2, error: error2 } = supabase.auth.updateUser({ email, password })
+
+    if(error2) {
+      alert('No se ha podido recuperar la contraseña')
+    } else {
+      setCode('')
+      setPassword('')
+      alert('Se ha actualizado la contraseña')
+    }
   }
 
   return (
     <Layout title='recuperar contraseña' description="Description will go into a meta tag in <head />">
       <main>
         <p>Actualiza tu contraseña</p>
-        <input type="text" className='--ifm-color-primary-lightest' placeholder='Correo' value={email} onChange={e => setEmail(e.target.value)} />
-        <input type="password" className='--ifm-color-primary-lightest' placeholder='contraseña' value={password} onChange={e => setPassword(e.target.value)} />
+        <input type="text" className='--ifm-color-primary-lightest' placeholder='Codigo de validacion' value={code} onChange={e => setCode(e.target.value)} />
+        <input type="password" className='--ifm-color-primary-lightest' placeholder='Nueva contraseña' value={password} onChange={e => setPassword(e.target.value)} />
         <button onClick={handleSubmit}>Actualizar</button>
       </main>
     </Layout>
