@@ -93,6 +93,15 @@ export default function Home() {
               to={useBaseUrl('methods/')}>
                 Conoce más
             </Link>
+
+            <a
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              href='https://github.com/self-david/dummy-code-documentation/releases/download/education/Dummy.Code.Setup.1.0.0.exe'>
+                Descargar aplicacion
+            </a>
           </div>
         </div>
       </header>
