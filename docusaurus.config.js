@@ -53,9 +53,9 @@ module.exports = async function createConfigAsync() {
         'content-docs',
         /** @type {import('@docusaurus/plugin-content-docs').Options} */
         ({
-          id: 'ReservPa',
-          path: 'ReservPa',
-          routeBasePath: 'ReservPa',
+          id: 'reservedWords',
+          path: 'reservedWords',
+          routeBasePath: 'reservedWords',
           editCurrentVersion: false,
           sidebarPath: require.resolve('./sidebars.js'),
         })
@@ -141,10 +141,10 @@ module.exports = async function createConfigAsync() {
             // sidebarId: 'tutorialSidebar',
           }, 
           {
-            to: '/ReservPa',
+            to: '/reservedWords',
             label: 'Palabras reservadas',
             position: 'left',
-            activeBaseRegex: '/ReservPa/'
+            activeBaseRegex: '/reservedWords/'
           },
           {
             to: '/estruct',
@@ -152,7 +152,7 @@ module.exports = async function createConfigAsync() {
             position: 'left',
             activeBaseRegex: '/estruct/'
           },
-          {to: 'blog', label: 'blog', position: 'left'},
+          // {to: 'blog', label: 'blog', position: 'left'}, // hidden
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://github.com/self-david/dummy-code-documentation',
@@ -174,18 +174,18 @@ module.exports = async function createConfigAsync() {
               {
                 label: 'Errores',
                 to: 'errors/',
-              }, 
+              },
               {
                 label: 'Tipos de dato',
                 to: 'datatypes/',
               },
               {
                 label: 'Palabras reservadas',
-                to: 'ReservPa'
+                to: 'reservedWords/'
               },
               {
                 label: 'Estructuras de control',
-                to: 'estruct'
+                to: 'estruct/'
               }
             ],
           },
