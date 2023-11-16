@@ -43,11 +43,11 @@ export default function recovey() {
 
   return (
     <Layout title='recuperar contraseña' description="Description will go into a meta tag in <head />">
-      <main>
-        <p>Actualiza tu contraseña</p>
-        <input type="text" className='--ifm-color-primary-lightest' placeholder='Codigo de validacion' value={code} onChange={e => setCode(e.target.value)} />
-        <input type="password" className='--ifm-color-primary-lightest' placeholder='Nueva contraseña' value={password} onChange={e => setPassword(e.target.value)} />
-        <button onClick={handleSubmit}>Actualizar</button>
+      <main className='main'>
+        <p className='p'>Actualiza tu contraseña</p>
+        <input type="text" className='--ifm-color-primary-lightest input' placeholder='Codigo de validacion' value={code} onChange={e => setCode(e.target.value)} />
+        <input type="password" className='--ifm-color-primary-lightest input' placeholder='Nueva contraseña' value={password} onChange={e => setPassword(e.target.value)} />
+        <button className='button' onClick={handleSubmit}>Actualizar</button>
       </main>
     </Layout>
   );
