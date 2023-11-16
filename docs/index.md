@@ -4,44 +4,25 @@ sidebar_position: 1
 
 # Introduccion
 
-Let's discover **Docusaurus in less than 5 minutes**.
+### ¡Bienvenido a DummyCode: Tu Puerta de Entrada al Mundo de la Programación en Español!
 
-## Getting Started
+Descubre DummyCode, un lenguaje de programación diseñado para hacer que aprender a programar sea más accesible y educativo que nunca. Influenciado por las sintaxis de C++, Python, JavaScript, Swift y Kotlin, DummyCode está creado para ser la próxima herramienta de aprendizaje que te preparará para enfrentar desafíos del mundo real.
 
-Get started by **creating a new site**.
+### Características Destacadas:
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Basado en el ZEN de Python: DummyCode estructura su sintaxis inspirándose en el enfoque claro y legible de Python, haciendo que aprender a programar sea una experiencia intuitiva.
 
-### What you'll need
+Idioma Español: Eliminamos la barrera del idioma al ofrecer DummyCode completamente en español. ¡Aprende a programar sin sentirte intimidado por las barreras lingüísticas!
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Niveles de Dificultad: Adéntrate en el aprendizaje de forma gradual con dos niveles de dificultad: normal y difícil. En el nivel difícil, descubre errores específicos y aprende a corregirlos para un crecimiento más sólido.
 
-## Generate a new site
+Escritura Coherente: Fomentamos buenas prácticas de codificación desde el principio. DummyCode promueve un estilo de escritura coherente para mejorar la legibilidad, el mantenimiento y la integración del código.
 
-Generate a new Docusaurus site using the **classic template**.
+Detector de Errores: No solo detectamos errores en la ejecución del programa, sino también malas prácticas que podrían conducir a errores lógicos. ¡Aprende a escribir código eficiente y libre de errores desde el principio!
 
-The classic template will automatically be added to your project after you run the command:
+Orientación sobre Errores: Cuando cometes un error, DummyCode no solo te señala dónde está, sino que también te explica por qué ocurrió y cómo solucionarlo. Obtén orientación práctica para mejorar constantemente.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### ¿Que nos diferencia de otras herramientas?
+A diferencia de plataformas como Scratch o Blockly, DummyCode permite a los estudiantes escribir código real desde el principio, proporcionando una transición más efectiva hacia lenguajes de programación de la industria. No te limites a arrastrar y soltar; sumérgete en el mundo real de la programación con DummyCode.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### ¡Explora DummyCode y da el primer paso hacia tu viaje en el fascinante mundo de la programación!
